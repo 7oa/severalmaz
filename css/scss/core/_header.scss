@@ -1,0 +1,175 @@
+header{
+  box-shadow: 0 4px 10px rgba(145, 199, 250, 0.2);
+  background: #fff;
+  .wrapper940{
+    position: relative;
+  }
+  &.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    .header-top{
+      display: none;
+    }
+    .top-social{
+      display: none;
+    }
+    .sticky-logo{
+      display: block;
+    }
+  }
+}
+.sticky-logo{
+  background: url(images/sticky-logo.png) no-repeat;
+  width: 40px;
+  height: 39px;
+  float:left;
+  display: none;
+  margin-top: 7px;
+  margin-right: 15px;
+}
+.header-top{
+  margin-bottom: 15px;
+  padding-top: 27px;
+  height: 70px;
+}
+.toplogo{
+  width: 254px;
+  height: 53px;
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 0;
+}
+.alrosalogo{
+  position: absolute;
+  top: 27px;
+  left: 291px;
+  width: 151px;
+  height: 60px;
+}
+.top-men>ul{
+  margin-left: -10px;
+  &>li{
+    float: left;
+    margin-right: 12px;
+    position: relative;
+    display: block;
+    border-bottom: 2px solid $c-white;
+    padding: 0 10px;
+    &>a{
+      display: block;
+      color: $c-main;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 52px;
+      &:hover{
+        color: $c-blue;
+      }
+    }
+    &.active{
+      border-bottom: 2px solid $c-blue;
+      &>a{
+        color: $c-blue;
+      }
+    }
+    &:hover{
+      border-bottom: 2px solid $c-blue;
+    }
+    &:hover ul{
+      display: block;
+    }
+    ul{
+      display: none;
+      position: absolute;
+      top: 54px;
+      left: -18px;
+      background: $c-white;
+      z-index: 10;
+      padding: 4px 0 5px;
+      box-shadow: 0 4px 10px rgba(145, 199, 250, 0.2);
+      li{
+        a{
+          display: block;
+          padding: 0 65px 0 20px;
+          text-decoration: none;
+          color: $c-main;
+          font-size: 16px;
+          line-height: 40px;
+          white-space: nowrap;
+          &:hover{
+            background: $c-blue;
+            color: $c-white;
+          }
+        }
+      }
+    }
+  }
+}
+.top-presentation{
+  display: block;
+  position: absolute;
+  top: 59px;
+  left: 575px;
+  color: $c-blue;
+  font-size: 14px;
+  line-height: 16px;
+  width: 130px;
+  height: 30px;
+  text-decoration: none;
+  padding-left: 40px;
+  background: url(images/play-video.png) left top no-repeat;
+  &:hover{
+    color: $c-violet;
+    background-position: left bottom;
+  }
+}
+.top-select-lang{
+  position: absolute;
+  top: 58px;
+  right: -14px;
+  font-size: 18px;
+  a{
+    display: block;
+    float: left;
+    padding: 6px 10px;
+    color: $c-light-grey;
+    text-decoration: none;
+    &:last-of-type{
+      border-left: 2px solid $c-border-lang;
+    }
+    &.active,
+    &:hover{
+      color: $c-blue;
+    }
+  }
+}
+.top-social{
+  position: absolute;
+  bottom: 17px;
+  right: -1px;
+  a{
+    display: block;
+    float:left;
+    &.top-vk{
+      width: 25px;
+      height: 20px;
+      background: url(images/top-social.png) 0 0 no-repeat;
+      margin-right: 22px;
+      &:hover{
+        background-position: 0 -19px;
+      }
+    }
+    &.top-insta{
+      width: 20px;
+      height: 20px;
+      background: url(images/top-social.png) -25px 0 no-repeat;
+      &:hover{
+        background-position: -25px -20px;
+      }
+    }
+  }
+}
+
