@@ -3,6 +3,7 @@
 @import "core/fonts";
 @import "core/vars";
 @import "core/base";
+@import "core/forms";
 @import "core/header";
 @import "core/footer";
 @import "core/yandexmap";
@@ -11,5 +12,8 @@
 @import "pages/investors";
 @import "pages/about";
 @import "pages/press";
+@import "pages/career";
+@import "pages/contacts";
+@import "pages/error";
 
 @import "core/adaptive";

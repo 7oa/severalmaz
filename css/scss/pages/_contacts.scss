@@ -1,0 +1,73 @@
+.contacts-list{
+  margin-bottom: 85px;
+  .contact-block{
+    border-bottom: 2px solid $c-violet;
+    margin-bottom: 60px;
+    font: 15px/30px "BrutalLight";
+    &:last-of-type{
+      border-bottom: none;
+    }
+    strong{
+      font-family: "BrutalMedium";
+    }
+    .ttl{
+      font: 21px/30px "BrutalBold";
+    }
+    .contact-block-content{
+      margin-bottom: 60px;
+      .contact-block-left{
+        float: left;
+        width: 470px;
+        margin-right: 20px;
+        .ttl{
+          margin-bottom: 30px;
+        }
+        .contact-block-left-items{
+          .contact-block-left-item{
+            float: left;
+            &:first-of-type{
+              width: 275px;
+            }
+          }
+          .requisites{
+            min-height: 54px;
+            padding-left: 57px;
+            display: block;
+            font: 13px/57px "OpenSans";
+            margin-top: 15px;
+          }
+        }
+      }
+      .contact-block-map{
+        float: left;
+        width: 450px;
+        height: 330px;
+      }
+
+    }
+    .contact-block-bottom{
+      margin-bottom: 33px;
+      .contact-block-bottom-item{
+        float: left;
+        &:first-of-type{
+          width: 490px;
+        }
+        .ttl{
+          margin-bottom: 36px;
+        }
+      }
+    }
+  }
+}
+.contactpage-form{
+  margin-top: -44px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.contact-anonim-text{
+  margin-bottom: 40px;
+  .list-ttl{
+    font: 17px/30px "OpenSans";
+    margin-bottom: 10px;
+  }
+}

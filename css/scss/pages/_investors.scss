@@ -1,10 +1,6 @@
 .wide-bg{
   height: 490px;
   overflow: hidden;
-}
-.investor-bg{
-  background: url(images/investor-bg.jpg) center top no-repeat;
-  background-size: cover;
   .wide-bg__inner{
     color: #fff;
     text-align: center;
@@ -14,9 +10,13 @@
       line-height: 60px;
       font-family: "BrutalBold";
       margin-bottom: 22px;
+      span{
+        font-size: 48px;
+      }
     }
     .second-line{
       font-size: 19px;
+      line-height: 25px;
       margin-bottom: 53px;
     }
     .red-button{
@@ -28,16 +28,9 @@
     }
   }
 }
-.investoram{
-  padding-top: 84px;
-  padding-bottom: 50px;
-  background: $c-bg2;
-  .title{
-    text-align: center;
-    font-size: 36px;
-    font-family: "BrutalBold";
-    margin-bottom: 32px;
-  }
+.investor-bg{
+  background: url(images/investor-bg.jpg) center top no-repeat;
+  background-size: cover;
 }
 .three-blocks{
   .three-blocks-item{
@@ -56,6 +49,7 @@
       left: 20px;
       color: $c-white;
       font-family: "BrutalBold";
+      z-index: 2;
     }
     &:after{
       content: "";

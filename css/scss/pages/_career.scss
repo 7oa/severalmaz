@@ -1,0 +1,66 @@
+.career-bg{
+  background: url(images/career-bg.jpg) center top no-repeat;
+  background-size: cover;
+}
+.career{
+  padding-bottom: 70px;
+  .three-blocks-item{
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+.three-blocks .double-small-block {
+  width: 600px;
+  height: 295px;
+  img {
+    width: 600px;
+    height: 295px;
+  }
+  .label{
+    font-size: 36px;
+    line-height: 36px;
+    bottom: 19px;
+  }
+}
+.vacancies-list{
+  margin-bottom: 90px;
+  .grey-vacan-block{
+    background-color: $c-bg2;
+    border: 1px solid $c-gray-border;
+    padding: 25px 20px 90px 40px;
+    margin-bottom: 20px;
+    font: 15px/25px "OpenSansLight";
+    .date{
+      font: 15px/15px "OpenSans";
+      margin-bottom: 6px;
+      color: $c-violet;
+    }
+    .ttl{
+      font: 21px/30px "BrutalBold";
+      color: $c-violet;
+      margin-bottom: 14px;
+    }
+    .tags-list{
+      margin-bottom: 20px;
+      .tag-item{
+        display: inline-block;
+        padding: 0 20px 0 15px;
+        background: $c-white;;
+        font-size: 13px;
+        color: $c-footer;
+      }
+    }
+    .vacan-block{
+      .vacan-block-ttl{
+        font: 15px/30px "OpenSans";
+      }
+    }
+    .red-button{
+      width: 290px;
+      height: 60px;
+      line-height: 60px;
+      display: block;
+      font-size: 18px;
+    }
+  }
+}

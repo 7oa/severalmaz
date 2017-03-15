@@ -106,3 +106,31 @@
     }
   }
 }
+.directors-list{
+  margin: 0 -10px;
+  .director-item{
+    float: left;
+    width: 300px;
+    margin: 0 10px 59px;
+    .foto{
+      line-height: 0;
+      margin-bottom: 17px;
+    }
+    .document{
+      padding-left: 60px;
+      display: block;
+      text-decoration: none;
+      .fio{
+        font: 18px/25px "BrutalMedium";
+        margin-bottom: 1px;
+        color: $c-main;
+        padding-top: 4px;
+      }
+      .post{
+        font: 15px/25px "OpenSansLight";
+        font-style: italic;
+        color: $c-footer;
+      }
+    }
+  }
+}
