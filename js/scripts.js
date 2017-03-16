@@ -116,13 +116,20 @@ $(document).ready(function(){
     //аккордеон
     $(".accordeon-ttl").click(function(){
         $(this).parent().find(".accordeon-body").slideToggle();
-        if($(this).parent().hasClass("close")){
-            $(this).parent().removeClass("close").addClass("open");
-        }
-        else if ($(this).parent().hasClass("open")){
-            $(this).parent().removeClass("open").addClass("close");
-        }
+        $(this).parent().toggleClass("close open");
     });
+
+    //аккордеон анкета
+    $(".anketa-ttl").click(function(){
+        var parent = $(this).parent();
+        parent.toggleClass("close open")
+            .find(".anketa-body").slideToggle();
+    });
+    $(".rollup").click(function () {
+        var parent = $(this).parent();
+        parent.toggleClass("close open")
+            .find(".anketa-body").slideToggle();
+    })
 
     //forms
     function focusForm($param) {
@@ -163,7 +170,7 @@ $(document).ready(function(){
         $(this).toggleClass("open")
             .children(".select-ul").slideToggle();
     });
-    $(".select-ul li").click(function () {
+    $(".select .select-ul li").click(function () {
         var val = $(this).text();
         var prnt = $(this).parent().parent();
         var placeholder = prnt.children(".select-label").attr("label");
@@ -198,6 +205,62 @@ $(document).ready(function(){
             .children("input").val("");
     });
 
+    //анкета
+    $(".add").click(function () {
+        var clones = $(this).parent().parent().parent().children(".clones");
+        var dolli = $(this).parent().parent().parent().find(".dolli").html();
+        clones.append(dolli);
+        $('.datepicker-here').datepicker({
+            onShow: function(dp, animationCompleted){
+                if (!animationCompleted) {
+                    dp.$el.toggleClass("dtp-show");
+                    console.log(dp.$el);
+                }
+            },
+            onHide: function(dp, animationCompleted){
+                if (animationCompleted) {
+                    dp.$el.toggleClass("dtp-show");
+                }
+            }
+        });
+    });
+    $(document).on("click",".position-del", function () {
+        $(this).parent().parent().remove();
+    });
+
+    //маски ввода
+    $("#passport").mask("9999 - 999999");
+    $("#snils").mask("999 - 999 - 999 99");
+    $("#inn").mask("9999 - 9999 - 9999");
+
+    $(document).on("click",".select-anketa", function () {
+        $(this).toggleClass("open")
+            .children(".select-ul").slideToggle();
+    });
+    $(document).on("click",".select-anketa .select-ul li", function () {
+        var val = $(this).text();
+        var prnt = $(this).parent().parent();
+        prnt.children("input").val(val);
+        prnt.addClass("selected")
+            .children(".select-label").text(val);
+    });
+    $(".anketa-file-upload input").change(function () {
+        $(this).parent().addClass("checkfile");
+    });
+
+    $('.datepicker-here').datepicker({
+        onShow: function(dp, animationCompleted){
+            if (!animationCompleted) {
+                dp.$el.toggleClass("dtp-show");
+                console.log(dp.$el);
+            }
+        },
+        onHide: function(dp, animationCompleted){
+            if (animationCompleted) {
+                dp.$el.toggleClass("dtp-show");
+            }
+        }
+    });
 
 });
 

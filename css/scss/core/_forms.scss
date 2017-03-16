@@ -6,6 +6,7 @@ textarea,
   border: 1px solid $c-gray-border;
   font: 21px/25px "BrutalLight";
   padding: 18px 16px;
+  color: $c-main;
   &.error{
     border-color: $с-red-button;
     color: $с-red-button;
@@ -153,11 +154,13 @@ input[type="checkbox"] + label::before {
   height: 18px;
   width: 18px;
   margin: 0 10px 0 0;
-  background-color: $c-violet;
+  background-color: $c-bg2;
+  border: 1px solid $c-gray-border;
   background-repeat: no-repeat;
   vertical-align: top;
 }
 input[type="checkbox"]:checked + label::before {
+  background-color: $c-violet;
   background-image: url(images/checkbox.png);
   background-position-y: center;
 }
@@ -218,6 +221,129 @@ input[type="checkbox"]:checked + label::before {
     .file-dummy{
       background-color: $c-white;
     }
+    .success{
+      display: block;
+    }
+    .default{
+      display: none;
+    }
+  }
+}
+form.anketa{
+  input[type="text"],
+  input[type="email"],
+  textarea{
+    background-color: $c-white;
+    border: none;
+    font: 15px/25px "BrutalLight";
+    padding: 2px 15px;
+    &:focus{
+      color: $c-main;
+    }
+  }
+  input,
+  textarea{
+    &.width100{
+      width: 419px;
+    }
+    &.width50{
+      width: 190px;
+      &.begin{
+        margin-right: 5px;
+      }
+    }
+  }
+  textarea{
+    height: 105px;
+  }
+}
+.select-anketa{
+  position: relative;
+  width: 190px;
+  cursor: pointer;
+  background-color: $c-white;
+  border: none;
+  font: 15px/30px "BrutalLight";
+  padding: 0px 15px;
+  height: 30px;
+  &:after {
+    content: "";
+    background: url(images/select-2.png) no-repeat 0 0;
+    width: 16px;
+    height: 7px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+  }
+  &.open{
+    &:after{
+      background-position-x: -16px;
+    }
+  }
+  .select-label{
+    color: $c-footer;
+  }
+  &.selected{
+    .select-label{
+      color: $c-main;
+    }
+  }
+  .select-ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    background: $c-white;
+    z-index: 99;
+    width: 100%;
+    li {
+      background-color: $c-white;
+      border-top: 1px solid $c-blue-bg;
+      font: 15px/30px "BrutalLight";
+      padding: 2px 15px;
+      cursor: pointer;
+      &:hover{
+        background: #4d60a7;
+        color: $c-white;
+      }
+    }
+  }
+}
+
+.anketa-file-upload{
+  width: 220px;
+  height: 260px;
+  position: relative;
+  background: $c-white;
+  input[type=file] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .file-dummy {
+    background:url(images/anketa-photo.png) $c-white no-repeat;
+    background-position: center center;
+    height: 100%;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    .inner{
+      padding: 180px 20px 0 20px;
+      font: 15px/21px "BrutalRegular";
+      color: $c-violet;
+    }
+    .success {
+      display: none;
+      position: relative;
+    }
+  }
+  &.checkfile{
     .success{
       display: block;
     }

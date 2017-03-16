@@ -64,3 +64,191 @@
     }
   }
 }
+.anketa-full{
+  padding-bottom: 35px;
+  h1{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .desc{
+    font: 18px/25px "BrutalRegular";
+    color: $c-footer;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+}
+form.anketa{
+  .anketa-white-block{
+    padding: 0 30px;
+    background-color: $c-white;
+    border: 1px solid $c-gray-border;
+    margin-bottom: 20px;
+    position: relative;
+    &:last-child{
+      margin-top: -21px;
+      padding-top: 30px;
+      padding-bottom: 35px;
+      .checkbox{
+        margin-bottom: 20px;
+        line-height: 0;
+        span{
+          padding-left: 30px;
+          display: inline-block;
+          margin-top: -18px;
+        }
+      }
+      .anketa-send-wrap{
+        margin-top: 30px;
+      }
+      .captcha{
+        float: left;
+        margin-left: 30px;
+      }
+      .anketa-send{
+        float: right;
+        padding-top: 20px;
+        input[type=submit]{
+          padding: 0 55px;
+          color: $c-white;
+          background: $c-light-grey;
+          transition: .5s;
+          &:hover{
+            background: $c-blue;
+          }
+        }
+      }
+    }
+    .rollup{
+      position: absolute;
+      bottom: 12px;
+      right: 30px;
+      color: $c-light-grey;
+      font: 15px/25px "BrutalRegular";
+      cursor: pointer;
+    }
+    .anketa-ttl{
+      font-family: "BrutalBold";
+      line-height: 30px;
+      padding: 24px 0;
+      &:after{
+        content: "";
+        height: 9px;
+        width: 16px;
+        display: inline-block;
+        margin-left: 15px;
+      }
+      .name{
+        font-size: 21px;
+      }
+      .count-current{
+        font-size: 21px;
+        color: $c-violet;
+      }
+      .count{
+        font-size: 15px;
+        color: $c-footer;
+      }
+    }
+    &.open{
+      .anketa-ttl{
+        cursor: pointer;
+        &:after{
+          background: url(images/acc.png) no-repeat;
+          background-position: -16px 0;
+          width: 17px;
+        }
+      }
+    }
+    &.close{
+      .anketa-ttl{
+        cursor: pointer;
+        &:after{
+          background: url(images/acc.png) no-repeat;
+          background-position: 0 0;
+          width: 16px;
+        }
+        .name{
+          color: $c-violet;
+        }
+      }
+      .rollup{
+        display: none;
+      }
+    }
+    .anketa-body{
+      margin-bottom: 50px;
+      .anketa-body-text{
+        margin-bottom: 25px;
+        font: 17px/30px "BrutalLight";
+        padding: 0 25px;
+      }
+      .anketa-blue-block{
+        border: 1px solid $c-gray-border;
+        background-color: $c-blue-bg;
+        margin-bottom: 10px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        .row{
+          margin-bottom: 10px;
+          &:after{
+            content: "";
+            display: table;
+            clear: both;
+          }
+          .col-1{
+            float: left;
+            line-height: 0;
+            &:first-child{
+              width: 293px;
+              text-align: right;
+              padding-right: 17px;
+              font: 15px/21px "BrutalLight";
+              color: $c-footer;
+              padding-top: 3px;
+            }
+            .add{
+              cursor: pointer;
+              color: $c-violet;
+              font: 15px/25px "BrutalRegular";
+              margin-top: 12px;
+              margin-left: 15px;
+              &:hover{
+                color: $c-blue;
+              }
+            }
+          }
+        }
+        .position-del{
+          display: inline-block;
+          margin-left: 10px;
+          background: url(images/anketa-del.png) no-repeat;
+          width: 15px;
+          height: 15px;
+          cursor: pointer;
+          vertical-align: middle;
+          &:hover{
+            background-position-x: -15px;
+          }
+        }
+      }
+    }
+  }
+  .datepicker-here{
+    background: url(images/select-3.png) $c-white no-repeat;
+    background-position-x: 194px;
+    background-position-y: 12px;
+    &.dtp-show{
+      background: url(images/select-3.png) $c-white no-repeat;
+      background-position-x: 194px;
+      background-position-y: -17px;
+    }
+  }
+}
+.anketa-lang{
+  .select-anketa{
+    float: left;
+    &:first-child{
+      margin-right: 6px;
+    }
+  }
+}
