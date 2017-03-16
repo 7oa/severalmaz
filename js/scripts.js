@@ -209,7 +209,7 @@ $(document).ready(function(){
     $(".add").click(function () {
         var clones = $(this).parent().parent().parent().children(".clones");
         var dolli = $(this).parent().parent().parent().find(".dolli").html();
-        clones.append(dolli);
+        clones.append('<div class="new-sheep">'+ dolli +'</div>');
         $('.datepicker-here').datepicker({
             onShow: function(dp, animationCompleted){
                 if (!animationCompleted) {
