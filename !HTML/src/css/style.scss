@@ -3,6 +3,11 @@
 @import "core/fonts";
 @import "core/vars";
 @import "core/base";
+
+@import "plugins/datepicker.min";
+@import "plugins/jquery.fancybox.min";
+@import "plugins/swiper.min";
+
 @import "core/forms";
 @import "core/header";
 @import "core/footer";

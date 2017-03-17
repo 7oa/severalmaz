@@ -306,6 +306,10 @@ a{
     background-color: #1c1c1c;
     background-image: linear-gradient(to right, #000002 0%, #4d60a7 0%, #3eb5f1 100%);
   }
+  &.about-1-bg{
+    background: url(images/about-1-bg.jpg) top center no-repeat;
+    background-size: cover;
+  }
   &.gradient{
     background-color: #f6f7fa;
     background-image: linear-gradient(to right, #4d60a7 0%, #3eb5f1 100%);

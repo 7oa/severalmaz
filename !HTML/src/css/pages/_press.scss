@@ -109,25 +109,34 @@
   }
   .foto-video-buttons{
     float: left;
+    padding-top: 20px;
     .media-link{
       display: inline-block;
-      font: 17px/68px "BrutalMedium";
+      font: 17px/15px "BrutalMedium";
       color: $c-light-grey;
-
       &:hover{
         text-decoration: none;
+        color: $c-blue;
       }
       &.active{
         color: $c-blue;
       }
       &.media-foto{
-        background: url(images/icon-photo.png) no-repeat 0 27px;
+        background: url(images/icon-photo.png) no-repeat 0 -15px;
         padding-left: 30px;
         margin-right: 17px;
+        &:hover,
+        &.active{
+          background-position: 0 0;
+        }
       }
       &.media-video{
-        background: url(images/icon-video.png) no-repeat 0 29px;
+        background: url(images/icon-video.png) no-repeat 0 -14px;
         padding-left: 20px;
+        &:hover,
+        &.active{
+          background-position: 0 1px;
+        }
       }
     }
   }

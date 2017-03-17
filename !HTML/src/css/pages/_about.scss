@@ -134,3 +134,116 @@
     }
   }
 }
+.environment-care{
+  background: url(images/environment-care-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: $c-white;
+  text-align: center;
+  margin-bottom: 55px;
+  .wrapper940{
+    padding-top: 60px;
+  }
+  &__ttl{
+    font: 36px/36px "BrutalBold";
+    margin-bottom: 30px;
+  }
+  &__text{
+    font-size: 17px;
+    line-height: 30px;
+    width: 820px;
+    margin: 0 auto 30px;
+  }
+  .white-button{
+    display: inline-block;
+    padding: 0 68px;
+    font-size: 18px;
+    line-height: 60px;
+  }
+}
+.activities-wrap{
+  &-tabs{
+    display: flex;
+    justify-content: space-between;
+    font: 15px/21px "BrutalRegular";
+    border-bottom: 1px solid $c-gray-border;
+    &__item{
+      color: $c-footer;
+      opacity: .6;
+      cursor: pointer;
+      transition: .5s;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      padding-bottom: 10px;
+      &_active,
+      &:hover{
+        opacity: 1;
+        border-bottom: 3px solid $c-violet;
+      }
+      &_img_1{
+        background: url(images/figures1.png) no-repeat;
+        padding-left: 60px;
+        background-position: center left;
+        padding-top: 15px;
+        height: 47px;
+      }
+      &_img_2{
+        background: url(images/figures2.png) no-repeat;
+        padding-left: 95px;
+        background-position: center left;
+      }
+      &_img_3{
+        background: url(images/figures3.png) no-repeat;
+        padding-left: 60px;
+        background-position: center left;
+      }
+      &_img_4{
+        background: url(images/figures4.png) no-repeat;
+        padding-left: 75px;
+        background-position: center left;
+        padding-top: 10px;
+      }
+      span{
+        color: $c-violet;
+      }
+    }
+  }
+  &-diagram{
+    padding: 30px 0 20px;
+  }
+}
+.activities-wrap-diagram{
+  display: none;
+  &_active{
+    display: block;
+  }
+}
+.tax-deductions{
+  margin-bottom: 20px;
+}
+.diagram-legend{
+  &__item{
+    font: 15px/21px "BrutalRegular";
+    &:before{
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    &_violet{
+      &:before{
+        background: $c-violet;
+      }
+    }
+    &_blue{
+      &:before{
+        background: $c-blue;
+      }
+    }
+  }
+}
+.social-mission{
+  margin-bottom: 60px;
+}

@@ -4,11 +4,9 @@
 	<meta charset="UTF-8">
 	<title>О компании</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="template_styles.css">
     <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
     <div class="site-wrapper">
@@ -36,7 +34,6 @@
                                 <ul>
                                     <li><a href="/about-1.html">Деятельность</a></li>
                                     <li><a href="/about-2.html">История</a></li>
-                                    <li><a href="/about-3.html">Стратегия</a></li>
                                     <li><a href="/about-4.html">Корпоративное управление</a></li>
                                     <li><a href="/about-5.html">Организационная структура</a></li>
                                     <li><a href="/about-6.html">Противодействие коррупции</a></li>
@@ -109,7 +106,6 @@
                     <ul class="second-nav">
                         <li><a href="/about-1.html">Деятельность</a></li>
                         <li><a href="/about-2.html">История</a></li>
-                        <li><a href="/about-3.html">Стратегия</a></li>
                         <li class="active"><a href="/about-4.html">Корпоративное управление</a></li>
                         <li><a href="/about-5.html">Организационная структура</a></li>
                         <li><a href="/about-6.html">Противодействие коррупции</a></li>
@@ -328,36 +324,5 @@
         </footer>
         <!-- end footer -->
     </div>
-    <script src="js/scripts.js"></script>
-    <script>
-        //карты
-        ymaps.ready(init);
-        function init () {
-            var myMap1 = new ymaps.Map("map-1", {
-                center: [64.538600, 40.518259],
-                zoom: 16
-            });
-            var myMap2 = new ymaps.Map("map-2", {
-                center: [55.76, 37.64],
-                zoom: 16
-            });
-            var myPlacemark = new ymaps.Placemark([64.538600, 40.518259], {
-                balloonContent: '164417, Россия, Архангельская область, Приморский район, вахтовый поселок Светлый, строение 100',
-            }, {
-                iconImageHref: 'images/baloon.png',
-                iconImageSize: [58, 64],
-                iconImageOffset: [-30,-54]
-            });
-            var myPlacemark2 = new ymaps.Placemark([55.76, 37.64], {
-                balloonContent: '163430 Россия, Архангельская область, Приморский р-н, д. Ижма',
-            }, {
-                iconImageHref: 'images/baloon.png',
-                iconImageSize: [58, 64],
-                iconImageOffset: [-30,-54]
-            });
-            myMap1.geoObjects.add(myPlacemark);
-            myMap2.geoObjects.add(myPlacemark2);
-        }
-    </script>
 </body>
 </html>
