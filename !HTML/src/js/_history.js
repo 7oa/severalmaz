@@ -32,8 +32,13 @@ $(document).ready(function() {
             if ((target.position().top - 135) <= scroll_top && (target.position().top - 135) + target.outerHeight() > scroll_top) {
                 $(menu_selector + " a.active").removeClass("active");
                 $(this).addClass("active");
+                var lineWidth = ($(this).position().left + $(this).outerWidth());
+                $(".blueline").width(lineWidth);
             } else {
                 $(this).removeClass("active");
+            }
+            if($(".one-date.active").length==0){
+                $(".blueline").width(0);
             }
         });
     }
@@ -52,11 +57,13 @@ $(document).ready(function() {
         $("html, body").animate({
             scrollTop: (target.offset().top - 135)
         }, 500, function () {
-            window.location.hash = hash;
+            //window.location.hash = hash;
             $(document).on("scroll", onScroll);
+
         });
 
     });
 
     //end timeline change active
+
 });

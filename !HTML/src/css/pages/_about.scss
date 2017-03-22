@@ -70,6 +70,15 @@
       height: 39px;
       border-bottom: 1px solid $c-gray-border;
     }
+    .blueline{
+      position: absolute;
+      top: 38px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: $c-blue;
+      transition: .5s;
+    }
     .dates{
       position: absolute;
       top: 0;
@@ -90,13 +99,13 @@
           margin-top: 38px;
           border-top: 3px solid transparent;
           &.active{
-            border-top: 3px solid #4d60a7;
+            //border-top: 3px solid #4d60a7;
           }
         }
         &:nth-child(even){
           height: 38px;
           &.active{
-            border-bottom: 3px solid #4d60a7;
+            //border-bottom: 3px solid #4d60a7;
           }
         }
         &:hover{
@@ -140,7 +149,7 @@
   background-size: cover;
   color: $c-white;
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 61px;
   .wrapper940{
     padding-top: 60px;
   }
@@ -159,6 +168,17 @@
     padding: 0 68px;
     font-size: 18px;
     line-height: 60px;
+  }
+}
+.business-activity{
+  margin-bottom: 48px;
+  h1{
+    margin-bottom: 36px;
+  }
+}
+.key-data{
+  h2{
+    margin-bottom: 44px;
   }
 }
 .activities-wrap{
@@ -209,21 +229,28 @@
     }
   }
   &-diagram{
-    padding: 30px 0 20px;
-  }
-}
-.activities-wrap-diagram{
-  display: none;
-  &_active{
-    display: block;
+    padding: 30px 0 114px;
+    display: none;
+    overflow: hidden;
+    &_active{
+      display: block;
+    }
   }
 }
 .tax-deductions{
   margin-bottom: 20px;
+  h2{
+    margin-bottom: 44px;
+  }
+  &-diagram{
+    overflow: hidden;
+    margin-bottom: 60px;
+  }
 }
 .diagram-legend{
   &__item{
     font: 15px/21px "BrutalRegular";
+    margin-bottom: 17px;
     &:before{
       content: "";
       width: 9px;
@@ -246,4 +273,12 @@
 }
 .social-mission{
   margin-bottom: 60px;
+}
+.diagram-overlay{
+  width: 960px;
+  margin: 0 -10px;
+}
+.about-bg{
+  background: url(images/about-bg.jpg) center top no-repeat;
+  background-size: cover;
 }

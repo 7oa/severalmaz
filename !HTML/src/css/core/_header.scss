@@ -70,13 +70,13 @@ header{
       }
     }
     &.active{
-      border-bottom: 2px solid $c-blue;
+      //border-bottom: 2px solid $c-blue;
       &>a{
         color: $c-blue;
       }
     }
     &:hover{
-      border-bottom: 2px solid $c-blue;
+      //border-bottom: 2px solid $c-blue;
     }
     &:hover ul{
       display: block;

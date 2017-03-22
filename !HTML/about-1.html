@@ -156,38 +156,37 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="activities-wrap-diagram activities-wrap-diagram_active" id="tab1" style="overflow: hidden">
-                                <div style="width: 960px; margin: 0 -10px;">
-                                    <canvas id="myChart1" width="960" height="400"></canvas>
+                            <div class="activities-wrap-diagram activities-wrap-diagram_active" id="tab1">
+                                <div class="diagram-overlay">
+                                    <canvas id="diagram1" width="960" height="400"></canvas>
                                 </div>
                                 <script>
-                                    var ctx = document.getElementById("myChart1");
-                                    var myChart1 = new Chart(ctx, {
+                                    var ctx = document.getElementById("diagram1");
+                                    var diagram1 = new Chart(ctx, {
                                         type: 'line',
                                         data: {
-                                            labels: ["", "2013", "2014", "2015", "2016", ""],
+                                            labels: ["", "2013", "2014", "2015", "2015", ""],
                                             datasets: [{
-                                                data: [550000, 635660, 1640000, 1950000, 2218000, 2500000],
+                                                data: [535660, 635660, 1640000, 1950000, 2218000, 2228000],
                                                 backgroundColor: '#f6f7fa',
                                                 borderColor: '#4d60a7',
                                                 pointBackgroundColor: '#4d60a7',
-                                                borderWidth: 2
+                                                borderWidth: 2,
+                                                pointHoverRadius: 3,
+                                                pointHoverBackgroundColor: '#4d60a7',
+                                                pointHoverBorderColor: '#4d60a7',
                                             }]
                                         },
                                         options: {
                                             responsive: false,
-                                            title:{
-                                                display: true
+                                            title: {
+                                                display: false
                                             },
                                             legend: {
                                                 display: false,
                                             },
                                             tooltips: {
-                                                mode: 'point',
-                                            },
-                                            hover: {
-                                                mode: 'point',
-                                                intersect: false
+                                                enabled: false,
                                             },
                                             scales: {
                                                 xAxes: [{
@@ -199,12 +198,18 @@
                                                         display: true,
                                                         drawBorder: true,
                                                         drawOnChartArea: false,
+                                                    },
+                                                    ticks: {
+                                                        fontSize: 19,
+                                                        fontFamily: "BrutalRegular",
+                                                        fontColor: "#848790",
                                                     }
                                                 }],
                                                 yAxes: [{
                                                     display: false,
                                                     ticks: {
-                                                        min: 0
+                                                        min: 0,
+                                                        max: 3000000
                                                     }
                                                 }]
                                             }
@@ -213,7 +218,67 @@
                                 </script>
                             </div>
                             <div class="activities-wrap-diagram" id="tab2">
-                                диаграмма 2
+                                <div class="diagram-overlay">
+                                    <canvas id="diagram2" width="960" height="400"></canvas>
+                                </div>
+                                <script>
+                                    var ctx = document.getElementById("diagram2");
+                                    var diagram2 = new Chart(ctx, {
+                                        type: 'line',
+                                        data: {
+                                            labels: ["", "2013", "2014", "2015", "2015", ""],
+                                            datasets: [{
+                                                data: [500660, 600660, 1000000, 2150000, 2218000, 2228000],
+                                                backgroundColor: '#f6f7fa',
+                                                borderColor: '#4d60a7',
+                                                pointBackgroundColor: '#4d60a7',
+                                                borderWidth: 2,
+                                                pointHoverRadius: 3,
+                                                pointHoverBackgroundColor: '#4d60a7',
+                                                pointHoverBorderColor: '#4d60a7',
+                                            }]
+                                        },
+                                        options: {
+                                            //animation: false,
+                                            responsive: false,
+                                            title: {
+                                                display: false
+                                            },
+                                            legend: {
+                                                display: false,
+                                            },
+                                            tooltips: {
+                                                enabled: false,
+                                            },
+                                            scales: {
+                                                xAxes: [{
+                                                    display: true,
+                                                    scaleLabel: {
+                                                        display: false,
+                                                    },
+                                                    gridLines: {
+                                                        display: true,
+                                                        drawBorder: true,
+                                                        drawOnChartArea: false,
+                                                    },
+                                                    ticks: {
+                                                        fontSize: 19,
+                                                        fontFamily: "BrutalRegular",
+                                                        fontColor: "#848790",
+                                                        padding: 30
+                                                    }
+                                                }],
+                                                yAxes: [{
+                                                    display: false,
+                                                    ticks: {
+                                                        min: 0,
+                                                        max: 3000000
+                                                    }
+                                                }]
+                                            }
+                                        }
+                                    });
+                                </script>
                             </div>
                             <div class="activities-wrap-diagram" id="tab3">
                                 диаграмма 3
@@ -248,7 +313,76 @@
                             <div class="diagram-legend__item diagram-legend__item_blue">Местный бюджет (с НДФЛ), Руб.</div>
                         </div>
                         <div class="tax-deductions-diagram">
-                            диаграмма
+                            <div class="diagram-overlay">
+                                <canvas id="taxCart" width="960" height="400"></canvas>
+                            </div>
+                            <script>
+                                var ctx = document.getElementById("taxCart");
+                                var taxCart = new Chart(ctx, {
+                                    type: 'line',
+                                    data: {
+                                        labels: ["", "2013", "2014", "2015", ""],
+                                        datasets: [{
+                                            data: [10024880, 29924880, 33759190, 40393990, 50393990],
+                                            backgroundColor: '#f2f8fc',
+                                            borderColor: '#007dc5',
+                                            pointBackgroundColor: '#007dc5',
+                                            borderWidth: 2,
+                                            pointHoverRadius: 3,
+                                            pointHoverBackgroundColor: '#007dc5',
+                                            pointHoverBorderColor: '#007dc5',
+                                        }, {
+                                            data: [450570870, 576570870, 1128455100, 1029601440, 1029601440],
+                                            backgroundColor: '#f6f7fa',
+                                            borderColor: '#4d60a7',
+                                            pointBackgroundColor: '#4d60a7',
+                                            borderWidth: 2,
+                                            pointHoverRadius: 3,
+                                            pointHoverBackgroundColor: '#4d60a7',
+                                            pointHoverBorderColor: '#4d60a7',
+                                        }]
+                                    },
+                                    options: {
+                                        responsive: false,
+                                        title: {
+                                            display: false
+                                        },
+                                        legend: {
+                                            display: false,
+                                        },
+                                        tooltips: {
+                                            enabled: false,
+                                        },
+                                        showAllTooltips: true,
+                                        scales: {
+                                            xAxes: [{
+                                                display: true,
+                                                scaleLabel: {
+                                                    display: false,
+                                                },
+                                                gridLines: {
+                                                    display: true,
+                                                    drawBorder: true,
+                                                    drawOnChartArea: false,
+                                                },
+                                                ticks: {
+                                                    fontSize: 19,
+                                                    fontFamily: "BrutalRegular",
+                                                    fontColor: "#848790",
+                                                    padding: 30
+                                                }
+                                            }],
+                                            yAxes: [{
+                                                display: false,
+                                                ticks: {
+                                                    min: 0,
+                                                    max: 1400000000
+                                                }
+                                            }]
+                                        }
+                                    }
+                                });
+                            </script>
                         </div>
                     </div>
                     <!--end Налоговые отчисления на развитие региона-->
@@ -300,7 +434,7 @@
                                     Самые важные факты из истории деятельности<br>
                                     нашей компании
                                 </div>
-                                <a href="/about-2.html" class="white-button readmore">Перейти</a>
+                                <a href="/about-2.html" class="red-button readmore">Перейти</a>
                             </div>
                         </div>
 

@@ -140,7 +140,7 @@ $(document).ready(function(){
                 input.attr("plc", placeholder);
                 input.attr("placeholder","");
                 $(this).append('<div class="after" style="display: none;">'+placeholder+'</div>');
-                $(this).children(".after").fadeIn("normal");
+                $(this).children(".after").fadeIn("slow");
             }
         });
         $('.'+$param).on('focusout', function () {
@@ -179,7 +179,7 @@ $(document).ready(function(){
             .children(".select-label").text(val);
         if(prnt.children(".after").length==0){
             prnt.append('<div class="after" style="display: none;">'+placeholder+'</div>')
-                .children(".after").fadeIn("normal");
+                .children(".after").fadeIn("slow");
         }
 
     });

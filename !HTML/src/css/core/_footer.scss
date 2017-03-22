@@ -47,18 +47,19 @@ footer{
       border-radius: 22px;
       display: block;
       text-decoration: none;
-      color: $c-blue;
+      color: $c-violet;
       font-size: 14px;
       width: 275px;
       padding: 0px 26px;
       position: relative;
       margin-bottom: 6px;
       height: 42px;
+      transition: .5s;
       &:hover{
         color: $c-violet;
+        border-color: $c-violet;
       }
       &.active{
-        border-color: $c-violet;
         .arrow-img{
           background-position: 0 -5px;
         }
@@ -83,7 +84,7 @@ footer{
         height: 6px;
         right: 26px;
         top: 18px;
-        background: url(images/next-arr.png) 0 -21px no-repeat;
+        background: url(images/next-arr.png) 0 -5px no-repeat;
         display: block;
         transition: none;
       }

@@ -7,10 +7,15 @@ textarea,
   font: 21px/25px "BrutalLight";
   padding: 18px 16px;
   color: $c-main;
+  transition: .8s;
   &.error{
     border-color: $с-red-button;
     color: $с-red-button;
   }
+  &:focus::-webkit-input-placeholder {color: transparent}
+  &:focus::-moz-placeholder          {color: transparent}
+  &:focus:-moz-placeholder           {color: transparent}
+  &:focus:-ms-input-placeholder      {color: transparent}
 }
 textarea{
   resize: vertical;

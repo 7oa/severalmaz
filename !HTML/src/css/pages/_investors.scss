@@ -58,9 +58,10 @@
       height: 100%;
       position: absolute;
       transition: .5s;
+      background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 50%, transparent 100%)
     }
     &:hover:after{
-      background: rgba(0,0,0,0.2);
+      background-color: rgba(0,0,0,0.2);
     }
   }
   .big-block{
@@ -109,6 +110,9 @@
         font: 21px/30px "OpenSans";
         color: $c-violet;
         margin-bottom: 10px;
+        &:hover{
+          text-decoration: none;
+        }
       }
       .size{
         font-family: "OpenSans";
@@ -138,6 +142,9 @@
       margin-bottom: 23px;
       margin-top: 9px;
       color: $c-white;
+      &:hover{
+        text-decoration: none;
+      }
     }
     .size{
       font-family: "OpenSans";
