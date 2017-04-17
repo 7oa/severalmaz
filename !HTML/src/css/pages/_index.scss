@@ -5,6 +5,9 @@
   .top-slide{
     position: relative;
     padding-top: 81px;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
     img{
       position: absolute;
       top: 0;
@@ -139,6 +142,12 @@
     display: block;
   }
 }
+.video-cover{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
 .see-all{
   display: block;
   position: absolute;
@@ -198,6 +207,10 @@
     .news-slider-item-img{
       position: relative;
       line-height: 0;
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: center center;
       &:after{
         content: "";
         position: absolute;
@@ -347,6 +360,8 @@
     position: relative;
     height: 440px;
     overflow: hidden;
+    background-size: cover;
+    background-position: center center;
     .video-icon{
       position: absolute;
       top: 167px;
@@ -384,6 +399,8 @@
   overflow: hidden;
   position: relative;
   line-height: 0;
+  background-size: cover;
+  background-position: center center;
   img{
     min-width: 100%;
     min-height: 100%;
@@ -430,12 +447,14 @@
   overflow: hidden;
  }
 .big-insta-foto{
+  @include bg-img();
   float: left;
   width: 446px;
   height: 446px;
   margin-right: 8px;
 }
 .small-insta-foto{
+  @include bg-img();
   width: 220px;
   height: 220px;
   float: left;

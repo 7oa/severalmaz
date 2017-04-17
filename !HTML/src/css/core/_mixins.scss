@@ -42,3 +42,8 @@
     src: $src;
 }
 }
+
+@mixin bg-img(){
+  background-size: cover;
+  background-position: center center;
+}

@@ -31,18 +31,28 @@
   .grey-vacan-block{
     background-color: $c-bg2;
     border: 1px solid $c-gray-border;
-    padding: 25px 20px 90px 40px;
+    padding: 25px 20px 0px 40px;
     margin-bottom: 20px;
     font: 15px/25px "OpenSansLight";
+    transition: .5s;
     .date{
       font: 15px/15px "OpenSans";
       margin-bottom: 6px;
       color: $c-violet;
+      transition: .5s;
     }
     .ttl{
       font: 21px/30px "BrutalBold";
       color: $c-violet;
       margin-bottom: 14px;
+      transition: .5s;
+      &:after{
+        content: "";
+        height: 9px;
+        display: inline-block;
+        margin-left: 15px;
+        transform: rotate(180deg);
+      }
     }
     .tags-list{
       margin-bottom: 20px;
@@ -67,6 +77,37 @@
       font-size: 18px;
     }
   }
+}
+.acc-block{
+  &.open{
+    .date{
+      color: $c-main;
+    }
+    .ttl{
+     color: $c-main;
+      &:after{
+        background: url(images/acc.png) no-repeat;
+        background-position: -16px 0;
+        width: 17px;
+      }
+    }
+  }
+  &.close{
+    background: $c-white;
+    .acc-body{
+      display: none;
+    }
+    .ttl:after{
+      background: url(images/acc.png) no-repeat;
+      width: 16px;
+    }
+  }
+}
+.acc-ttl{
+  cursor: pointer;
+}
+.acc-body{
+  padding-bottom: 90px;
 }
 .anketa-full{
   padding-bottom: 35px;

@@ -129,7 +129,13 @@ $(document).ready(function(){
         var parent = $(this).parent();
         parent.toggleClass("close open")
             .find(".anketa-body").slideToggle();
-    })
+    });
+
+	//аккордеон вакансии
+	$(".acc-ttl").click(function(){
+		$(this).parent().find(".acc-body").slideToggle();
+		$(this).parent().toggleClass("close open");
+	});
 
     //forms
     function focusForm($param) {

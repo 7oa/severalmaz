@@ -600,6 +600,9 @@ a{
 .prev-news-block{
   margin: 0 -10px;
 }
+.prev-news-item-img{
+  @include bg-img();
+}
 .prev-news-item{
   float: left;
   background: $c-white;

@@ -31,9 +31,11 @@
       float: left;
       margin-bottom: 20px;
       .item-img{
+        @include bg-img();
         line-height: 0;
         width: 460px;
         overflow: hidden;
+        height: 310px;
       }
       .item-content{
         border: 1px solid $c-gray-border;
@@ -122,8 +124,11 @@
     width: 300px;
     margin: 0 10px 59px;
     .foto{
+      @include bg-img();
       line-height: 0;
       margin-bottom: 17px;
+      width: 100%;
+      height: 310px;
     }
     .document{
       padding-left: 60px;
@@ -195,6 +200,8 @@
       border-bottom: 3px solid transparent;
       margin-bottom: -2px;
       padding-bottom: 10px;
+      display: flex;
+      align-items: center;
       &_active,
       &:hover{
         opacity: 1;
@@ -226,6 +233,18 @@
       span{
         color: $c-violet;
       }
+    }
+    &__tbl{
+      display: table;
+    }
+    &__img{
+      display: table-cell;
+      padding-right: 15px;
+      vertical-align: middle;
+    }
+    &__ttl{
+      display: table-cell;
+      vertical-align: middle;
     }
   }
   &-diagram{
