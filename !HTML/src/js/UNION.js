@@ -10,3 +10,4 @@
 //@prepros-prepend		_scripts.js
 //@prepros-prepend		_history.js
 //@prepros-prepend		_forChart.js
+//@prepros-prepend		_diagrams.js

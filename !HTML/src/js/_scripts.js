@@ -36,6 +36,7 @@ $(document).ready(function(){
         width: 940,
         pagination: '.news-slider-pagination',
         paginationClickable: true,
+		autoHeight: true,
         paginationBulletRender: function (swiper, index, className) {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         }
@@ -274,6 +275,14 @@ $(document).ready(function(){
         $(".activities-wrap-diagram").removeClass("activities-wrap-diagram_active");
         $("#"+link).addClass("activities-wrap-diagram_active");
     });
+
+	//закупки-переключение табов
+	$(".js-tabs").click(function () {
+		var link = $(this).attr("link");
+		$(this).addClass("active").siblings().removeClass("active");
+		$(this).parent().next().children().removeClass("active");
+		$(this).parent().next().find("#"+link).addClass("active");
+	});
 
 });
 

@@ -47,3 +47,15 @@
   background-size: cover;
   background-position: center center;
 }
+
+//@include clearfix();  ClearFix Все понятно
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

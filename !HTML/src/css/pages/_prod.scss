@@ -1,0 +1,145 @@
+.prod-1{
+  margin-bottom: 63px;
+}
+.prod-2{
+  margin-bottom: 62px;
+}
+.moos-list{
+
+}
+.moos-item{
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-left: 80px;
+  margin-bottom: 50px;
+  &__ttl{
+    font: 19px/30px "OpenSans";
+  }
+}
+.prod7-slider{
+  margin-bottom: 90px;
+}
+.prod7-docs{
+  margin-bottom: 100px;
+}
+.prod1-bg{
+  margin-top: -1px;
+  height: 520px;
+  margin-bottom: 11px;
+  background-position: center center;
+  background-size: cover;
+  .wide-bg__inner{
+    padding-top: 135px;
+    .first-line{
+      margin-bottom: 29px;
+    }
+    .second-line{
+      margin-bottom: 69px;
+    }
+    .red-button{
+      padding: 0 68px;
+    }
+  }
+}
+.prod-diagrams-wrapper{
+  margin-bottom: 20px;
+}
+.prod-diagram-item{
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.prod-diagram-item__desc{
+  width: 500px;
+  flex: 0 0 auto;
+}
+.prod-diagram-item__diagram{
+  padding-top: 35px;
+}
+.diagram-ttl{
+  text-align: center;
+  font: 15px/21px "BrutalRegular";
+  margin-bottom: 38px;
+}
+.prod-diagram-line{
+  padding: 52px 0 30px;
+  margin-left: calc((100vw - 957px) / -2);
+  margin-right: calc((100vw - 957px) / -2);
+  &:nth-child(even){
+    background: $c-bg2;
+    border-top: 1px solid $c-gray-border;
+    border-bottom: 1px solid $c-gray-border;
+    .prod-diagram-item{
+      flex-direction: row-reverse;
+    }
+  }
+  &:nth-child(odd){
+    .prod-diagram-item{
+      flex-direction: row;
+    }
+  }
+}
+.prod-diagram-item__ttl{
+  font: 27px/30px "BrutalBold";
+  margin-bottom: 34px;
+}
+.prod1-slider{
+  margin-bottom: 64px;
+}
+.full-grey-prod6{
+  margin-bottom: 67px;
+  &__wrapper{
+    padding: 80px 0 87px;
+  }
+  &__ttl{
+    font: 36px/36px "BrutalBold";
+    text-align: center;
+    margin-bottom: 77px;
+  }
+  &__content{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__diagram-overlay{
+    width: 220px;
+    height: 220px;
+    margin-top: -16px;
+    margin-left: 20px;
+  }
+  &__legend{
+    width: 265px;
+    font: 15px/21px "BrutalRegular";
+  }
+  &__legend-item{
+    margin-bottom: 28px;
+    display: flex;
+  }
+  &__legend-pin{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 14px;
+    margin-top: 8px;
+    flex: 0 0 auto;
+  }
+}
+.diagram-wrapper{
+  background-color: $c-bg2;
+  border: 1px solid $c-gray-border;
+  padding: 20px 20px 40px 30px;
+  margin: 0 -20px 60px;
+
+}
+.diagram-ttl{
+  font: 15px/21px "BrutalRegular";
+  margin-bottom: 20px;
+}
+.prod7-p{
+  margin-bottom: 57px;
+}
+.prod6-slider{
+  margin-bottom: 95px;
+}

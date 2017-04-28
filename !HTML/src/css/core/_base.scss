@@ -158,8 +158,10 @@ a{
   }
   ol{
     counter-reset: num;
+
     li{
       margin-bottom: 30px;
+      display: flex;
       &:before{
         content: counter(num);
         counter-increment: num;
@@ -169,17 +171,18 @@ a{
         border: 1px solid $c-gray-border;
         text-align: center;
         display: block;
-        float: left;
+        //float: left;
         color: $c-violet;
         font-size: 17px;
         font-family: "BrutalBold";
         margin-right: 20px;
+        flex: 0 0 30px;
       }
-      &:after{
+      /*&:after{
         content: "";
         display: table;
         clear: both;
-      }
+      }*/
     }
   }
   ul:not(.select-ul){
@@ -262,12 +265,15 @@ a{
 }
 .second-nav{
   border-bottom: 1px solid #e8e8e8;
-  padding-top: 7px;
+  //padding-top: 7px;
+  display: flex;
+  height: 42px;
+  padding-top: 29px;
   li{
     display: inline-block;
     font-size: 14px;
-    line-height: 62px;
-    margin-right: 17px;
+    line-height: 18px;
+    margin-right: 18px;
     a{
       color: $c-light-grey;
       text-decoration: none;
@@ -286,6 +292,9 @@ a{
         color: $c-blue;
       }
     }
+    &:last-of-type{
+      margin-right: 0;
+    }
   }
 
 }
@@ -294,25 +303,24 @@ a{
   margin-right: calc((100vw - 957px) / -2);
   height: 350px;
   color: $c-white;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   &.invest2{
-    background: url(images/invest-2-back.jpg) top center no-repeat;
-    background-size: cover;
+    background-image: url(images/invest-2-back.jpg);
   }
   &.invest1{
-    background: url(images/invest-1-back.jpg) top center no-repeat;
-    background-size: cover;
+    background-image: url(images/invest-1-back.jpg);
   }
   &.invest3{
-    background: url(images/invest-3-back.jpg) top center no-repeat;
-    background-size: cover;
+    background-image: url(images/invest-3-back.jpg);
   }
   &.corruption{
     background-color: #1c1c1c;
     background-image: linear-gradient(to right, #000002 0%, #4d60a7 0%, #3eb5f1 100%);
   }
   &.about-1-bg{
-    background: url(images/about-1-bg.jpg) top center no-repeat;
-    background-size: cover;
+    background-image: url(images/about-1-bg.jpg);
   }
   &.gradient{
     background-color: #f6f7fa;
@@ -397,6 +405,16 @@ a{
       font-family: "BrutalLight";
     }
   }
+  &.fullwidth-nottl{
+    .text{
+      height: auto;
+      font: 36px/36px "BrutalBold";
+      background-position: center left;
+    }
+    .inner{
+      padding-top: 136px;
+    }
+  }
 }
 .doc-icon{
   width: 39px;
@@ -408,6 +426,9 @@ a{
 }
 .pdf-white{
   background: url(images/pdf-white.png) no-repeat;
+}
+.pdf-blue{
+  background: url(images/pdf-blue.png) no-repeat;
 }
 .doc{
   background: url(images/doc.png) no-repeat;
@@ -714,4 +735,15 @@ a{
     margin-bottom: 32px;
   }
 }
-
+.slider{
+  overflow: hidden;
+  position: relative;
+}
+.diagram-cut{
+  overflow: hidden;
+}
+.full-grey{
+  background: $c-bg2;
+  margin-left: calc((100vw - 957px) / -2);
+  margin-right: calc((100vw - 957px) / -2);
+}

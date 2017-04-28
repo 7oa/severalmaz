@@ -330,7 +330,8 @@
     background-color: $c-violet;
     color: $c-white;
     font: 15px/25px "BrutalLight";
-    padding: 15px 20px;
+    padding: 15px 230px 15px 20px;
+    min-height: 25px;
     span{
       font-family: "BrutalBold";
     }

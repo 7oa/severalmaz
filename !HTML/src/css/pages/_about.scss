@@ -119,8 +119,10 @@
 }
 .directors-list{
   margin: 0 -10px;
+  display: flex;
+  flex-wrap: wrap;
   .director-item{
-    float: left;
+    //float: left;
     width: 300px;
     margin: 0 10px 59px;
     .foto{
@@ -300,4 +302,27 @@
 .about-bg{
   background: url(images/about-bg.jpg) center top no-repeat;
   background-size: cover;
+}
+.en-about-history{
+  text-align: center;
+  padding-top: 61px;
+  padding-bottom: 73px;
+  height: auto;
+  margin-bottom: 81px;
+}
+.en-operation-desc{
+  margin-bottom: 20px;
+}
+.about-corrup-desc{
+  margin-bottom: 24px;
+}
+.about-corrup-docs-list{
+  margin-bottom: 70px;
+  .one-color-doc{
+    margin-bottom: 35px;
+  }
+}
+.form-block-about-corrup{
+  padding-top: 73px;
+  padding-bottom: 67px;
 }

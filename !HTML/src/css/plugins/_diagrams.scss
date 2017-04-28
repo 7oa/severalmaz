@@ -1,0 +1,36 @@
+.dial {
+  border-color: rgba(255,255,255,0.1);
+  color: $c-white;
+  position: relative;
+  margin-bottom: 12px;
+  p {
+	text-align:center;
+	font-family: "BrutalBold";
+	font-size: 50px;
+	line-height: 50px;
+	color: $c-white;
+	white-space: nowrap;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	margin: 0;
+	right: 0;
+	left: 0;
+	top: 48px;
+  }
+  canvas {
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+  }
+  .label{
+	font-size: 15px;
+	font-family: "BrutalRegular";
+	text-align: center;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 41px;
+  }
+}

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Сортировка алмазов</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="template_styles.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="site-wrapper">
+        <!-- content -->
+        <div class="content">
+            <!-- header -->
+            <header class="default">
+                <div class="wrapper940">
+                    <div class="header-top">
+                        <a href="/" class="toplogo"><img src="images/sa-logo.png" alt=""></a>
+                        <a href="#" class="alrosalogo"><img src="images/alrosa.png" alt=""></a>
+                        <a href="#" class="top-presentation">
+                            Презентация<br>
+                            о компании
+                        </a>
+                        <div class="top-select-lang">
+                            <a href="#" class="active">RU</a>
+                            <a href="#">EN</a>
+                        </div>
+                    </div>
+                    <a href="/" class="sticky-logo"></a>
+                    <nav class="top-men clearfix">
+                        <ul>
+                            <li><a href="/about.html">О компании</a>
+                                <ul>
+                                    <li><a href="/about-1.html">Деятельность</a></li>
+                                    <li><a href="/about-2.html">История</a></li>
+                                    <li><a href="/about-4.html">Корпоративное управление</a></li>
+                                    <li><a href="/about-5.html">Организационная структура</a></li>
+                                    <li><a href="/about-6.html">Противодействие коррупции</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="/production.html">Производство</a>
+                                <ul>
+                                    <li><a href="/production-1.html">Процесс производства</a></li>
+                                    <li><a href="/production-2.html">Минерально-сырьевая база</a></li>
+                                    <li><a href="/production-3.html">Геолразведка</a></li>
+                                    <li><a href="/production-4.html">Технологический транспорт</a></li>
+                                    <li><a href="/production-5.html">Обогащение сырья</a></li>
+                                    <li><a href="/production-6.html">Сортировка алмазов</a></li>
+                                    <li><a href="/production-7.html">Окружающая среда</a></li>
+                                    <li><a href="/production-8.html">Охрана труда</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/investoram.html">Инвесторам</a>
+                                <ul>
+                                    <li><a href="/investoram-1.html">Акционерный капитал</a></li>
+                                    <li><a href="/investoram-2.html">Раскрытие информации</a></li>
+                                    <li><a href="/investoram-3.html">Годовые отчеты</a></li>
+                                    <li><a href="/investoram-4.html">Часто задаваемые вопросы</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/career.html">Карьера</a>
+                                <ul>
+                                    <li><a href="/career-1.html">Кадровая политика</a></li>
+                                    <li><a href="/career-2.html">Условия работы</a></li>
+                                    <li><a href="/career-3.html">Сотрудникам</a></li>
+                                    <li><a href="/career-4-vacancies.html">Вакансии</a></li>
+                                    <li><a href="/career-5.html">Учебный центр</a></li>
+                                    <li><a href="/career-6.html">Часто задаваемые вопросы</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/press.html">Пресс-центр</a>
+                                <ul>
+                                    <li><a href="/press-1-allnews.html">Новости и пресс-релизы</a></li>
+                                    <li><a href="/press-2.html">Медиа галерея</a></li>
+                                    <li><a href="/press-3.html">Публикации в СМИ о "Севералмаз"</a></li>
+                                    <li><a href="/press-4.html">Сообщества в социальных сетях</a></li>
+                                    <li><a href="/press-5-presskit.html">Пресс-кит</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/procurement.html">Закупки</a>
+                                <ul>
+                                    <li><a href="/procurement-1.html">Обновление документов</a></li>
+                                    <li><a href="/procurement-2.html">Нормативные документы</a></li>
+                                    <li><a href="/procurement-3.html">Справочная информация о закупках</a></li>
+                                    <li><a href="/procurement-4.html">Планирование закупок</a></li>
+                                    <li><a href="/procurement-5.html">Аккредитации</a></li>
+                                    <li><a href="/procurement-6.html">Объявленные закупки</a></li>
+                                    <li><a href="/procurement-7.html">Реестр недобросовестных контрагентов</a></li>
+                                    <li><a href="/procurement-8.html">Информация для субъектов СМП</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/contacts-1.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="top-social">
+                        <a href="http://vk.com" class="top-vk"></a>
+                        <a href="http://instagram.com" class="top-insta"></a>
+                    </div>
+                </div>
+            </header>
+            <!-- end header -->
+
+            <section class="wrapper">
+                <div class="wrapper940">
+                    <ul class="second-nav">
+                        <li><a href="/production-1.html">Процесс</a></li>
+                        <li><a href="/production-2.html">Минерально-сырьевая база</a></li>
+                        <li><a href="/production-3.html">Геолразведка</a></li>
+                        <li><a href="/production-4.html">Транспорт</a></li>
+                        <li><a href="/production-5.html">Обогащение сырья</a></li>
+                        <li class="active"><a href="/production-6.html">Сортировка</a></li>
+                        <li><a href="/production-7.html">Окр.среда</a></li>
+                        <li><a href="/production-8.html">Охрана труда</a></li>
+                    </ul>
+                </div>
+                <div class="wrapper940 inner_page">
+                    <h1>Сортировка алмазов</h1>
+
+                    <div>
+                        Сортировка алмазного сырья производится на основании утверждённого Минфином РФ классификатора для необработанных природных алмазов. В нём выделяется порядка 8000 позиций для всех встречающихся в природе разновидностей алмазов. Сортировка осуществляется по основным классификационным признакам. Такими основными классификационными признаками являются:
+                        <ul>
+                            <li>размерность (вес)</li>
+                            <li>форма (характеризует собственно кристаллографическую форму, целостность камня, его степень искажения, овализацию и характер поверхности «рельефности» граней у алмаза)</li>
+                            <li>дефектность (отсутствие или наличие в большем или меньшем количестве различных включений и трещин в объёме классифицируемого камня)</li>
+                            <li>цвет (характеризует интенсивность окраски и цветовые оттенки, подразделяется на группы от бесцветных до цветных с густой окраской в объёме камня с детальной градацией между этими крайними группами)</li>
+                        </ul>
+                    </div>
+
+                    <div class="full-grey full-grey-prod6">
+                        <div class="wrapper940">
+                            <div class="full-grey-prod6__wrapper">
+                                <div class="full-grey-prod6__ttl">
+                                    Особенности добываемых алмазов
+                                </div>
+                                <div class="full-grey-prod6__content">
+                                    <div class="full-grey-prod6__diagram">
+                                        <div class="full-grey-prod6__diagram-overlay">
+                                            <canvas id="pie"></canvas>
+                                            <script>
+												var ctx = document.getElementById("pie");
+												var pie = new Chart(ctx, {
+													type: 'pie',
+													data: {
+														datasets: [
+															{
+																data: [71, 18, 11],
+																backgroundColor: ["#4d60a7", "#007dc5", "#ee2e30"]
+															}
+														]
+													},
+													options: {
+														responsive: true,
+														tooltips: {
+															enabled: false,
+														},
+														elements: {
+															arc: {
+																borderWidth: 0
+															}
+														}
+													}
+												});
+                                            </script>
+                                        </div>
+                                    </div>
+                                    <div class="full-grey-prod6__legend">
+                                        <div class="full-grey-prod6__legend-wrapper">
+                                            <div class="full-grey-prod6__legend-item">
+                                                <div class="full-grey-prod6__legend-pin" style="background-color: #ee2e30;"></div>
+                                                <div><span style="color: #ee2e30;">11%</span> - ювелирного качества</div>
+                                            </div>
+                                            <div class="full-grey-prod6__legend-item">
+                                                <div class="full-grey-prod6__legend-pin" style="background-color: #007dc5;"></div>
+                                                <div><span style="color: #007dc5;">18%</span> - технические алмазы
+                                                    (непригодные для ювелирной
+                                                    работы)</div>
+                                            </div>
+                                            <div class="full-grey-prod6__legend-item">
+                                                <div class="full-grey-prod6__legend-pin" style="background-color: #4d60a7;"></div>
+                                                <div><span style="color: #4d60a7;">71%</span> - алмазы околоювелирного
+                                                    качества</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prod7-p">
+                        Наибольший из алмазов, добытых в трубке Архангельская по настоящее время, имеет массу 106,64 карат. Основная масса камней данной трубки приходится на алмазы крупностью от 2 до 4 мм, средняя масса одного кристалла в данном классе колеблется от 39 до 50 мг (см. ниже)
+                    </div>
+
+                    <div class="diagram-wrapper">
+                        <div class="diagram-ttl">
+                            Распределение алмазного сырья по обогатительным классам<br>
+                            (%, трубка Архангельская)
+                        </div>
+                        <canvas id="bar1" width="920" height="270"></canvas>
+                        <script>
+							var ctx = document.getElementById("bar1");
+							var bar = new Chart(ctx, {
+								type: 'bar',
+								data: {
+									labels: ["-25.0+8.0", "-8.0+6.7", "-6.7+4.75", "-4.75+4.0", "-4.0+2.0", "-2.0+1.7", "-1.7+3уск", "-3уск+1"],
+									datasets: [{
+										data: [3, 4, 8, 9, 48, 12, 18, 7],
+										backgroundColor: "#4d60a7"
+									}]
+								},
+								options: {
+									responsive: true,
+									title: {
+										display: false
+									},
+									legend: {
+										display: false
+									},
+									tooltips: {
+										enabled: false
+									},
+									scales: {
+										yAxes: [{
+											gridLines: {
+												borderDash: [5, 5],
+												drawBorder: false,
+												color: "#848790"
+											},
+											ticks: {
+												fontSize: 13,
+												fontFamily: "BrutalRegular",
+												fontColor: "#848790",
+												min: 0,
+												max: 50,
+												stepSize: 5,
+												padding: 10
+											}
+										}],
+										xAxes:[{
+											gridLines: {
+												display: true,
+												drawBorder: false,
+												drawOnChartArea: false
+											},
+											ticks: {
+												fontSize: 13,
+												fontFamily: "BrutalRegular",
+												fontColor: "#848790"
+											}
+
+										}]
+									}
+								}
+							});
+                        </script>
+                    </div>
+
+                    <div class="prod7-p">
+                        На следующей диаграмме представлено распределение алмазного сырья по размерно - весовым группам в завсимости от массы и стоимости. Основную массовую и стоимостную нагрузку несет алмазное сырье выше класса -6+5. Это более 80% от общей массы и около 95% от общей стоимости. Наиболее значимыми по соотношению массы выхода к стоимости выделяются группы крупных алмазов, таких как +10,5 ct,+1,8 и 4-6 gr. Наиболее представительными по массе выхода являются размерно-весовые группы от -11+9 до -6+5.
+                    </div>
+
+                    <div class="diagram-wrapper">
+                        <div class="diagram-ttl">
+                            Распределение алмазного сырья тр. Архангельская<br>
+                            (<span style="color: #3eb5f1">% от массы</span> и <span style="color: #4d60a7">% от стоимости</span>)
+                        </div>
+                        <canvas id="bar2" width="920" height="280"></canvas>
+                        <script>
+                            var ctx = document.getElementById("bar2");
+                            var bar = new Chart(ctx, {
+                                type: 'bar',
+                                data: {
+                                    labels: ["+10.8", "+1.8", "4-6 gr", "3 gr", "2 gr", "-12+11", "-11+9", "-9+7", "-7+6", "-6+5", "-5+4", "-4+3", "-3+2", "-2+1"],
+                                    datasets: [
+                                        {
+                                            data: [3, 6, 7, 5, 8, 9, 17, 13, 11, 12, 3, 8, 2, 1],
+                                            backgroundColor: "#3eb5f1",
+                                            borderWidth: 0
+                                        },
+                                        {
+                                            data: [4, 22, 12, 6, 7, 8, 14, 9, 7, 6, 2, 4, 1, 0],
+                                            backgroundColor: "#4d60a7",
+                                            borderWidth: 0
+                                        }
+                                    ]
+                                },
+                                options: {
+                                    responsive: true,
+                                    title: {
+                                        display: false
+                                    },
+                                    legend: {
+                                        display: false
+                                    },
+                                    tooltips: {
+                                        enabled: false
+                                    },
+                                    scales: {
+                                        yAxes: [{
+                                            gridLines: {
+                                                borderDash: [5, 5],
+                                                drawBorder: false,
+                                                color: "#848790"
+                                            },
+                                            ticks: {
+                                                fontSize: 13,
+                                                fontFamily: "BrutalRegular",
+                                                fontColor: "#848790",
+                                                min: 0,
+                                                max: 25,
+                                                stepSize: 5,
+                                                padding: 10
+                                            }
+                                        }],
+                                        xAxes:[{
+                                            gridLines: {
+                                                display: true,
+                                                drawBorder: false,
+                                                drawOnChartArea: false
+                                            },
+                                            ticks: {
+                                                fontSize: 13,
+                                                fontFamily: "BrutalRegular",
+                                                fontColor: "#848790"
+                                            },
+                                            barPercentage: 1.0
+                                        }]
+                                    }
+                                }
+                            });
+                        </script>
+                    </div>
+
+                    <h2>Процесс сортировки</h2>
+                    <p>Вся продукция с обогатительной фабрики поступает в цех сортировки алмазов. Здесь окончательно производится контроль добытых алмазов по качеству их химической очистки, наличию в них примесей и качеству рассева. Далее алмазное сырьё последовательно проходит стадии предварительной классификации по размеру и весу, сортировки и оценки. Отдельно производятся работы по выделению алмазов редких цветовых оттенков и паспортизация алмазов специальных размеров свыше +10,8 карат.</p>
+
+                    <br>
+
+                    <h2>Цех сортировки</h2>
+
+                    <p>В Цехе сортировки алмазов функционируют следующие основные производственно - технологические участки: классификации, экспертной оценки, приёма, выдачи и комплектации алмазного сырья, хранилище. В них трудятся высоко квалифицированные рабочие и специалисты, настоящие профессионалы своего дела.</p>
+
+                    <br>
+
+                    <!--slider-->
+                    <div class="detail-news-slider prod6-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="news-slider-img" style="background-image: url('images/TEMP/news-slide.jpg')"></div>
+                                <div class="news-slider-ttl"><span>Фото:</span> Процесс сортировки</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-slider-img" style="background-image: url('images/TEMP/news-slide.jpg')"></div>
+                                <div class="news-slider-ttl"><span>Фото:</span> добыло первые 10 млн. карат алмазов</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-slider-img" style="background-image: url('images/TEMP/news-slide.jpg')"></div>
+                                <div class="news-slider-ttl"><span>Фото:</span> добыло первые 10 млн. карат алмазов</div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="news-slider-pagination"></div>
+                    </div>
+                    <!--end slider-->
+
+                    <!--fullwidth-->
+                    <div class="fullwidth" style="background-image: url('images/prod6-bg.jpg');">
+                        <div class="wrapper940">
+                            <div class="inner">
+                                <div class="ttl">
+                                    Охрана окружающей среды
+                                </div>
+                                <div class="text">
+                                    Мы уделяем особое внимание охране<br>
+                                    окружающей среды
+                                </div>
+                                <a href="/production-2.html" class="red-button readmore">Читать далее</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--end fullwidth-->
+
+                </div>
+            </section>
+        </div>
+        <!-- end content -->
+        <!-- footer -->
+        <footer>
+            <div class="wrapper940">
+                <div class="footer-top">
+                    <a href="/" class="toplogo"><img src="images/sa-logo.png" alt=""></a>
+                    <a href="#" class="alrosalogo"><img src="images/alrosa.png" alt=""></a>
+                    <a href="#" class="top-presentation">
+                        Презентация<br>
+                        о компании
+                    </a>
+                    <div class="top-select-lang">
+                        <a href="#" class="active">RU</a>
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-contacts">
+                        <div class="footer-ttl footer-ttl-contacts">Контакты:</div>
+
+                        <div class="footer-block footer-block-addr">
+                            163000, г. Архангельск, ул. Карла Маркса,15<br>
+                            <a href="">Смотреть на карте</a>
+                        </div>
+
+                        <div class="footer-block footer-block-tel">
+                            Телефон: (8182) 65-75-07<br>
+                            Факс: (8182) 65-75-27<br>
+                            Email: <a href="mailto:">sevalmaz@severalmaz.ru</a>
+                        </div>
+                    </div>
+                    <div class="footer-subscription">
+                        <div class="footer-ttl">Всегда в курсе событий:</div>
+                        <form action="" class="subscribe-button">
+                            <div class="mail-img"></div>
+                            <div class="subscribe-button-text">Подписаться на обновления</div>
+                            <div class="arrow-img"></div>
+                            <input type="email" class="subscribe-email" value="" placeholder="Введите e-mail">
+                            <input type="submit" class="subscribe-arrow-img" value="">
+                        </form>
+                        <div class="subscribe-text">
+                            Подпишитесь на наши обновления и
+                            получайте новости о деятельности
+                            компании самыми первыми
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-ss">
+                            <a href="#" class="footer-insta"></a>
+                            <a href="#" class="footer-vk"></a>
+                        </div>
+                        <a href="#" class="footer-f5"></a>
+                    </div>
+                </div>
+                <div class="footer-old-version">© 1992–2017 ПАО «Севералмаз». <a href="">Старая версия сайта</a></div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+</body>
+</html>
