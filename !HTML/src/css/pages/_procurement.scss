@@ -1,7 +1,7 @@
-.procurement-1-desc{
+.procurement-2-desc{
   margin-bottom: 42px;
 }
-.procurement-1-docs-list{
+.procurement-2-docs-list{
   margin-bottom: 96px;
   .one-color-doc{
 	margin-bottom: 40px;
@@ -14,7 +14,7 @@
   }
 }
 .proc5-menu{
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid $c-gray-border;
   margin-bottom: 40px;
 }
 .proc5-tab{
@@ -36,4 +36,123 @@
 	  box-shadow: 0 4px 10px rgba(0, 167, 255, 0.4);
 	}
   }
+}
+.proc-bg{
+  .wide-bg__inner{
+	padding-top: 155px;
+	.first-line{
+	  margin-bottom: 63px;
+	}
+  }
+}
+.prev-block_proc{
+  padding-top: 11px;
+}
+.proc1-pagination{
+  margin-bottom: 75px;
+}
+.procurement-1-desc{
+  margin-bottom: 42px;
+}
+.procurement-1-docs-list{
+  margin-bottom: 60px;
+  .one-color-doc{
+	margin-bottom: 40px;
+  }
+}
+.proc8-tbl1{
+  margin-bottom: 10px;
+}
+.proc8-tbl2{
+  margin-bottom: 95px;
+}
+.procurement-4-docs-list{
+  padding: 50px 0;
+}
+.proc4-menu {
+  border-bottom: 1px solid $c-gray-border;
+}
+.proc4-tbl2{
+  margin-bottom: 126px;
+}
+.kot-item{
+  margin-bottom: 16px;
+}
+.kot-item-body{
+  border: 1px solid $c-gray-border;
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px 14px;
+}
+.kot-item-footer{
+  background: $c-bg2;
+  border-right: 1px solid $c-gray-border;
+  border-left: 1px solid $c-gray-border;
+  border-bottom: 1px solid $c-gray-border;
+  padding: 6px 20px;
+  a{
+	font: 14px/14px "BrutalRegular";
+	margin-right: 13px;
+  }
+}
+.kot-item-td1{
+  width: 260px;
+  flex: 0 0 auto;
+}
+.kot-item-td3{
+  width: 205px;
+  flex: 0 0 auto;
+}
+.kot-dates{
+  text-align: right;
+  font: 15px/25px "OpenSansLight";
+  font-style: italic;
+  margin-top: -4px;
+}
+.kot-label{
+  font: 14px/18px "BrutalRegular";
+  margin-bottom: 10px;
+  color: $c-footer;
+}
+.kot-fz{
+  font: 15px/25px "OpenSansLight";
+  font-style: italic;
+  margin-bottom: 15px;
+  color: $c-footer;
+  span{
+	color: $с-red-button;
+  }
+}
+.kot-sum{
+  font: 27px/25px "BrutalBold";
+  color: $c-main;
+  margin-bottom:-3px;
+  span{
+	font-size: 21px;
+  }
+}
+.kot-val{
+  color: $c-light-grey;
+  font: 14px/18px "BrutalRegular";
+}
+.kot-num{
+  color: $c-main;
+  font: 21px/25px "BrutalRegular";
+  margin-bottom: 7px;
+  margin-top: 4px;
+  text-decoration: underline;
+}
+.kot-desc{
+  color: $c-main;
+  font: 15px/25px "OpenSansLight";
+}
+.kot-list{
+  margin-bottom: 57px;
+}
+.proc6-tab1{
+  margin-bottom: 63px;
+}
+.proc6-menu{
+  border-bottom: 1px solid $c-gray-border;
+  margin-bottom: 29px;
 }

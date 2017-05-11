@@ -143,3 +143,20 @@
 .prod6-slider{
   margin-bottom: 95px;
 }
+.full-map-img{
+  margin-left: calc((100vw - 957px) / -2);
+  margin-right: calc((100vw - 957px) / -2);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.prod3-map{
+  height: 530px;
+}
+.prod3-diagram{
+  margin-bottom: 55px;
+  border-top: 0 !important;
+}
+.prod3-slider{
+  margin-bottom: 60px;
+}

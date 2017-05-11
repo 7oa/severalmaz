@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Объявленные закупки</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="template_styles.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
+</head>
+<body>
+    <div class="site-wrapper">
+        <!-- content -->
+        <div class="content">
+            <!-- header -->
+            <header class="default">
+                <div class="wrapper940">
+                    <div class="header-top">
+                        <a href="/" class="toplogo"><img src="images/sa-logo.png" alt=""></a>
+                        <a href="#" class="alrosalogo"><img src="images/alrosa.png" alt=""></a>
+                        <a href="#" class="top-presentation">
+                            Презентация<br>
+                            о компании
+                        </a>
+                        <div class="top-select-lang">
+                            <a href="#" class="active">RU</a>
+                            <a href="#">EN</a>
+                        </div>
+                    </div>
+                    <a href="/" class="sticky-logo"></a>
+                    <nav class="top-men clearfix">
+                        <ul>
+                            <li><a href="/about.html">О компании</a>
+                                <ul>
+                                    <li><a href="/about-1.html">Деятельность</a></li>
+                                    <li><a href="/about-2.html">История</a></li>
+                                    <li><a href="/about-3.html">Стратегия</a></li>
+                                    <li><a href="/about-4.html">Корпоративное управление</a></li>
+                                    <li><a href="/about-5.html">Организационная структура</a></li>
+                                    <li><a href="/about-6.html">Противодействие коррупции</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/production.html">Производство</a>
+                                <ul>
+                                    <li><a href="/production-1.html">Процесс производства</a></li>
+                                    <li><a href="/production-2.html">Минерально-сырьевая база</a></li>
+                                    <li><a href="/production-3.html">Геолразведка</a></li>
+                                    <li><a href="/production-4.html">Технологический транспорт</a></li>
+                                    <li><a href="/production-5.html">Обогащение сырья</a></li>
+                                    <li><a href="/production-6.html">Сортировка алмазов</a></li>
+                                    <li><a href="/production-7.html">Окружающая среда</a></li>
+                                    <li><a href="/production-8.html">Охрана труда</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/investoram.html">Инвесторам</a>
+                                <ul>
+                                    <li><a href="/investoram-1.html">Акционерный капитал</a></li>
+                                    <li><a href="/investoram-2.html">Раскрытие информации</a></li>
+                                    <li><a href="/investoram-3.html">Годовые отчеты</a></li>
+                                    <li><a href="/investoram-4.html">Часто задаваемые вопросы</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/career.html">Карьера</a>
+                                <ul>
+                                    <li><a href="/career-1.html">Кадровая политика</a></li>
+                                    <li><a href="/career-2.html">Условия работы</a></li>
+                                    <li><a href="/career-3.html">Сотрудникам</a></li>
+                                    <li><a href="/career-4-vacancies.html">Вакансии</a></li>
+                                    <li><a href="/career-5.html">Учебный центр</a></li>
+                                    <li><a href="/career-6.html">Часто задаваемые вопросы</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/press.html">Пресс-центр</a>
+                                <ul>
+                                    <li><a href="/press-1-allnews.html">Новости и пресс-релизы</a></li>
+                                    <li><a href="/press-2.html">Медиа галерея</a></li>
+                                    <li><a href="/press-3.html">Публикации в СМИ о "Севералмаз"</a></li>
+                                    <li><a href="/press-4.html">Сообщества в социальных сетях</a></li>
+                                    <li><a href="/press-5-presskit.html">Пресс-кит</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="/procurement.html">Закупки</a>
+                                <ul>
+                                    <li><a href="/procurement-1.html">Обновление документов</a></li>
+                                    <li><a href="/procurement-2.html">Нормативные документы</a></li>
+                                    <li><a href="/procurement-3.html">Справочная информация о закупках</a></li>
+                                    <li><a href="/procurement-4.html">Планирование закупок</a></li>
+                                    <li><a href="/procurement-5.html">Аккредитации</a></li>
+                                    <li><a href="/procurement-6.html">Объявленные закупки</a></li>
+                                    <li><a href="/procurement-7.html">Реестр недобросовестных контрагентов</a></li>
+                                    <li><a href="/procurement-8.html">Информация для субъектов СМП</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/contacts-1.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="top-social">
+                        <a href="http://vk.com" class="top-vk"></a>
+                        <a href="http://instagram.com" class="top-insta"></a>
+                    </div>
+                </div>
+            </header>
+            <!-- end header -->
+
+            <section class="wrapper">
+                <!--submenu-->
+                <div class="wrapper940">
+                    <ul class="second-nav">
+                        <li><a href="/procurement-1.html">Обновления</a></li>
+                        <li><a href="/procurement-2.html">Нормативы</a></li>
+                        <li><a href="/procurement-3.html">Справочная</a></li>
+                        <li><a href="/procurement-4.html">Планирование</a></li>
+                        <li><a href="/procurement-5.html">Аккредитациии</a></li>
+                        <li class="active"><a href="/procurement-6.html">Объявленные закупки</a></li>
+                        <li><a href="/procurement-7.html">Недобросовестные<br>
+                            контрагенты</a></li>
+                        <li><a href="/procurement-8.html">Субъектам<br>
+                            СМП</a></li>
+                    </ul>
+                </div>
+                <!--end submenu-->
+
+                <div class="wrapper940 inner_page">
+
+                    <h1>Объявленные закупки</h1>
+                    <p>Информация о проводимых закупках</p>
+
+
+                    <div class="proc6-menu">
+                        <div class="proc5-tab active js-tabs" link="tab1">ЕИС</div>
+                        <div class="proc5-tab js-tabs" link="tab2">ЭТП Алроса</div>
+                        <div class="proc5-tab js-tabs" link="tab3">ЭТП Тендер ПРО</div>
+                        <div class="proc5-tab js-tabs" link="tab4">Список закупок</div>
+                    </div>
+                    <div class="tabs-list">
+                        <!--tab1-->
+                        <div id="tab1" class="proc5-tabs active">
+                            <div class="proc6-tab1">
+                                <div class="kot-list">
+                                    <div class="kot-item">
+                                        <div class="kot-item-body">
+                                            <div class="kot-item-td1">
+                                                <div class="kot-label">
+                                                    Запрос котировок<br>
+                                                    в электронной форме
+                                                </div>
+
+                                                <div class="kot-fz">
+                                                    Подача заявок / <span>223 - ФЗ</span>
+                                                </div>
+
+                                                <div class="kot-sum">
+                                                    196 944 726, <span>00</span>
+                                                </div>
+
+                                                <div class="kot-val">
+                                                    Российский рубль
+                                                </div>
+                                            </div>
+                                            <div class="kot-item-td2">
+                                                <div class="kot-num">
+                                                    № 662 503 37 23
+                                                </div>
+
+                                                <div class="kot-desc">
+                                                    Оказание услуг по организации питания работников ПАО «Севералмаз» на Ломоносовском ГОКе.
+                                                </div>
+                                            </div>
+                                            <div class="kot-item-td3">
+                                                <div class="kot-dates">
+                                                    Размещено: 28.02.2017<br>
+                                                    Обновлено: 28.02.2017
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="kot-item-footer">
+                                            <a href="#">Сведения</a>
+                                            <a href="#">Документы</a>
+                                            <a href="#">Изменения и разъяснения</a>
+                                            <a href="#">Жалобы</a>
+                                            <a href="#">Протоколы</a>
+                                        </div>
+                                    </div>
+                                    <div class="kot-item">
+                                        <div class="kot-item-body">
+                                            <div class="kot-item-td1">
+                                                <div class="kot-label">
+                                                    Запрос котировок<br>
+                                                    в электронной форме
+                                                </div>
+
+                                                <div class="kot-fz">
+                                                    Подача заявок / <span>223 - ФЗ</span>
+                                                </div>
+
+                                                <div class="kot-sum">
+                                                    196 944 726, <span>00</span>
+                                                </div>
+
+                                                <div class="kot-val">
+                                                    Российский рубль
+                                                </div>
+                                            </div>
+                                            <div class="kot-item-td2">
+                                                <div class="kot-num">
+                                                    № 662 503 37 23
+                                                </div>
+
+                                                <div class="kot-desc">
+                                                    Оказание услуг по организации питания работников ПАО «Севералмаз» на Ломоносовском ГОКе.
+                                                </div>
+                                            </div>
+                                            <div class="kot-item-td3">
+                                                <div class="kot-dates">
+                                                    Размещено: 28.02.2017<br>
+                                                    Обновлено: 28.02.2017
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="kot-item-footer">
+                                            <a href="#">Сведения</a>
+                                            <a href="#">Документы</a>
+                                            <a href="#">Изменения и разъяснения</a>
+                                            <a href="#">Жалобы</a>
+                                            <a href="#">Протоколы</a>
+                                        </div>
+                                    </div>
+                                    <div class="kot-item">
+                                        <div class="kot-item-body">
+                                            <div class="kot-item-td1">
+                                                <div class="kot-label">
+                                                    Запрос котировок<br>
+                                                    в электронной форме
+                                                </div>
+
+                                                <div class="kot-fz">
+                                                    Подача заявок / <span>223 - ФЗ</span>
+                                                </div>
+
+                                                <div class="kot-sum">
+                                                    196 944 726, <span>00</span>
+                                                </div>
+
+                                                <div class="kot-val">
+                                                    Российский рубль
+                                                </div>
+                                            </div>
+                                            <div class="kot-item-td2">
+                                                <div class="kot-num">
+                                                    № 662 503 37 23
+                                                </div>
+
+                                                <div class="kot-desc">
+                                                    Оказание услуг по организации питания работников ПАО «Севералмаз» на Ломоносовском ГОКе.
+                                                </div>
+                                            </div>
+                                            <div class="kot-item-td3">
+                                                <div class="kot-dates">
+                                                    Размещено: 28.02.2017<br>
+                                                    Обновлено: 28.02.2017
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="kot-item-footer">
+                                            <a href="#">Сведения</a>
+                                            <a href="#">Документы</a>
+                                            <a href="#">Изменения и разъяснения</a>
+                                            <a href="#">Жалобы</a>
+                                            <a href="#">Протоколы</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--pagination-->
+                                <div class="pagination">
+                                    <a href="#" class="p-prew">предыдущая</a>
+                                    <a href="#" class="p-page">1</a>
+                                    <a href="#" class="p-page active">2</a>
+                                    <a href="#" class="p-page">3</a>
+                                    <a href="#" class="p-page">...</a>
+                                    <a href="#" class="p-page">10</a>
+                                    <a href="#" class="p-next">следующая</a>
+                                </div>
+                                <!--end pagination-->
+                            </div>
+                        </div>
+                        <!--end tab1-->
+
+                        <!--tab2-->
+                        <div id="tab2" class="proc5-tabs">
+                            <div class="proc4-tbl2">
+                                <table class="table3">
+                                    <thead>
+                                    <tr>
+                                        <th width="100">Номер</th>
+                                        <th width="180">Предмет</th>
+                                        <th width="100">Тип</th>
+                                        <th width="120">Статус</th>
+                                        <th>Дата</th>
+                                        <th>
+                                            Начальная
+                                            цена (с НДС)
+                                        </th>
+                                        <th width="140">Ответственный</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1000022999</td>
+                                        <td>
+                                            <a href="#">Монтаж, демонтаж
+                                                кондиционеров</a>
+                                        </td>
+                                        <td>
+                                            Открытый
+                                        </td>
+                                        <td>
+                                            Прием
+                                            предложений
+                                        </td>
+                                        <td>
+                                            30.08.16 -
+                                            04.09.17
+                                        </td>
+                                        <td>
+                                            80 000 RUB
+                                        </td>
+                                        <td>
+                                            Матвеев Антон
+                                            Анатольевич
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1000022999</td>
+                                        <td>
+                                            <a href="#">Закупка по счету</a>
+                                        </td>
+                                        <td>
+                                            Открытый
+                                        </td>
+                                        <td>
+                                            Прием
+                                            предложений
+                                        </td>
+                                        <td>
+                                            30.08.16 -
+                                            04.09.17
+                                        </td>
+                                        <td>
+                                            70 000 RUB
+                                        </td>
+                                        <td>
+                                            Шаповалова Анна
+                                            Сергеевна
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!--end tab2-->
+
+                        <!--tab3-->
+                        <div id="tab3" class="proc5-tabs">
+                            <div class="proc4-tbl2">
+                                <table class="table2">
+                                    <thead>
+                                    <tr>
+                                        <th width="110">Номер</th>
+                                        <th width="360">Название тендера</th>
+                                        <th width="210">
+                                            Период
+                                        </th>
+                                        <th>Поставка</th>
+                                        <th width="110">Цена</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>27 11 78</td>
+                                            <td>
+                                                <a href="#">Палатка лагерная 4ППП10 по заявке №К32</a>
+                                            </td>
+                                            <td>
+                                                07.04.2017 - 21.04.2017
+                                            </td>
+                                            <td>
+                                                31.05.2017
+                                            </td>
+                                            <td>
+                                                35 000 000 руб.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>27 11 78</td>
+                                            <td>
+                                                <a href="#">Приобретение ЭПРА для установки
+                                                    обеззараживания воды по заявке №S0000001193
+                                                    от 21.02.2017 года</a>
+                                            </td>
+                                            <td>
+                                                07.04.2017 - 21.04.2017
+                                            </td>
+                                            <td>
+                                                31.05.2017
+                                            </td>
+                                            <td>
+                                                35 000 000 руб.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>27 11 78</td>
+                                            <td>
+                                                <a href="#">Палатка лагерная 4ППП10 по заявке №К32</a>
+                                            </td>
+                                            <td>
+                                                07.04.2017 - 21.04.2017
+                                            </td>
+                                            <td>
+                                                31.05.2017
+                                            </td>
+                                            <td>
+                                                35 000 000 руб.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>27 11 78</td>
+                                            <td>
+                                                <a href="#">Приобретение ЭПРА для установки
+                                                    обеззараживания воды по заявке №S0000001193
+                                                    от 21.02.2017 года</a>
+                                            </td>
+                                            <td>
+                                                07.04.2017 - 21.04.2017
+                                            </td>
+                                            <td>
+                                                31.05.2017
+                                            </td>
+                                            <td>
+                                                35 000 000 руб.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>27 11 78</td>
+                                            <td>
+                                                <a href="#">Палатка лагерная 4ППП10 по заявке №К32</a>
+                                            </td>
+                                            <td>
+                                                07.04.2017 - 21.04.2017
+                                            </td>
+                                            <td>
+                                                31.05.2017
+                                            </td>
+                                            <td>
+                                                35 000 000 руб.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>27 11 78</td>
+                                            <td>
+                                                <a href="#">Приобретение ЭПРА для установки
+                                                    обеззараживания воды по заявке №S0000001193
+                                                    от 21.02.2017 года</a>
+                                            </td>
+                                            <td>
+                                                07.04.2017 - 21.04.2017
+                                            </td>
+                                            <td>
+                                                31.05.2017
+                                            </td>
+                                            <td>
+                                                35 000 000 руб.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>27 11 78</td>
+                                            <td>
+                                                <a href="#">Палатка лагерная 4ППП10 по заявке №К32</a>
+                                            </td>
+                                            <td>
+                                                07.04.2017 - 21.04.2017
+                                            </td>
+                                            <td>
+                                                31.05.2017
+                                            </td>
+                                            <td>
+                                                35 000 000 руб.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>27 11 78</td>
+                                            <td>
+                                                <a href="#">Приобретение ЭПРА для установки
+                                                    обеззараживания воды по заявке №S0000001193
+                                                    от 21.02.2017 года</a>
+                                            </td>
+                                            <td>
+                                                07.04.2017 - 21.04.2017
+                                            </td>
+                                            <td>
+                                                31.05.2017
+                                            </td>
+                                            <td>
+                                                35 000 000 руб.
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!--end tab3-->
+
+                        <!--tab4-->
+                        <div id="tab4" class="proc5-tabs">
+                            <div class="proc6-tab1">
+                                <div class="kot-list">
+                                    <div class="kot-item">
+                                        <div class="kot-item-body">
+                                            <div class="kot-item-td1">
+                                                <div class="kot-label">
+                                                    Запрос котировок<br>
+                                                    в электронной форме
+                                                </div>
+
+                                                <div class="kot-fz">
+                                                    Подача заявок / <span>223 - ФЗ</span>
+                                                </div>
+
+                                                <div class="kot-sum">
+                                                    196 944 726, <span>00</span>
+                                                </div>
+
+                                                <div class="kot-val">
+                                                    Российский рубль
+                                                </div>
+                                            </div>
+                                            <div class="kot-item-td2">
+                                                <div class="kot-num">
+                                                    № 662 503 37 23
+                                                </div>
+
+                                                <div class="kot-desc">
+                                                    Оказание услуг по организации питания работников ПАО «Севералмаз» на Ломоносовском ГОКе.
+                                                </div>
+                                            </div>
+                                            <div class="kot-item-td3">
+                                                <div class="kot-dates">
+                                                    Размещено: 28.02.2017<br>
+                                                    Обновлено: 28.02.2017
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="kot-item-footer">
+                                            <a href="#">Сведения</a>
+                                            <a href="#">Документы</a>
+                                            <a href="#">Изменения и разъяснения</a>
+                                            <a href="#">Жалобы</a>
+                                            <a href="#">Протоколы</a>
+                                        </div>
+                                    </div>
+                                    <div class="kot-item">
+                                        <div class="kot-item-body">
+                                            <div class="kot-item-td1">
+                                                <div class="kot-label">
+                                                    Запрос котировок<br>
+                                                    в электронной форме
+                                                </div>
+
+                                                <div class="kot-fz">
+                                                    Подача заявок / <span>223 - ФЗ</span>
+                                                </div>
+
+                                                <div class="kot-sum">
+                                                    196 944 726, <span>00</span>
+                                                </div>
+
+                                                <div class="kot-val">
+                                                    Российский рубль
+                                                </div>
+                                            </div>
+                                            <div class="kot-item-td2">
+                                                <div class="kot-num">
+                                                    № 662 503 37 23
+                                                </div>
+
+                                                <div class="kot-desc">
+                                                    Оказание услуг по организации питания работников ПАО «Севералмаз» на Ломоносовском ГОКе.
+                                                </div>
+                                            </div>
+                                            <div class="kot-item-td3">
+                                                <div class="kot-dates">
+                                                    Размещено: 28.02.2017<br>
+                                                    Обновлено: 28.02.2017
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="kot-item-footer">
+                                            <a href="#">Сведения</a>
+                                            <a href="#">Документы</a>
+                                            <a href="#">Изменения и разъяснения</a>
+                                            <a href="#">Жалобы</a>
+                                            <a href="#">Протоколы</a>
+                                        </div>
+                                    </div>
+                                    <div class="kot-item">
+                                        <div class="kot-item-body">
+                                            <div class="kot-item-td1">
+                                                <div class="kot-label">
+                                                    Запрос котировок<br>
+                                                    в электронной форме
+                                                </div>
+
+                                                <div class="kot-fz">
+                                                    Подача заявок / <span>223 - ФЗ</span>
+                                                </div>
+
+                                                <div class="kot-sum">
+                                                    196 944 726, <span>00</span>
+                                                </div>
+
+                                                <div class="kot-val">
+                                                    Российский рубль
+                                                </div>
+                                            </div>
+                                            <div class="kot-item-td2">
+                                                <div class="kot-num">
+                                                    № 662 503 37 23
+                                                </div>
+
+                                                <div class="kot-desc">
+                                                    Оказание услуг по организации питания работников ПАО «Севералмаз» на Ломоносовском ГОКе.
+                                                </div>
+                                            </div>
+                                            <div class="kot-item-td3">
+                                                <div class="kot-dates">
+                                                    Размещено: 28.02.2017<br>
+                                                    Обновлено: 28.02.2017
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="kot-item-footer">
+                                            <a href="#">Сведения</a>
+                                            <a href="#">Документы</a>
+                                            <a href="#">Изменения и разъяснения</a>
+                                            <a href="#">Жалобы</a>
+                                            <a href="#">Протоколы</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--pagination-->
+                                <div class="pagination">
+                                    <a href="#" class="p-prew">предыдущая</a>
+                                    <a href="#" class="p-page">1</a>
+                                    <a href="#" class="p-page active">2</a>
+                                    <a href="#" class="p-page">3</a>
+                                    <a href="#" class="p-page">...</a>
+                                    <a href="#" class="p-page">10</a>
+                                    <a href="#" class="p-next">следующая</a>
+                                </div>
+                                <!--end pagination-->
+                            </div>
+                        </div>
+                        <!--end tab4-->
+                    </div>
+
+                    <!--fullwidth-->
+                    <div class="fullwidth fullwidth-nottl" style="background-image: url('images/proc-6-bg.jpg')">
+                        <div class="wrapper940">
+                            <div class="inner">
+                                <div class="text">
+                                    Информация для субъектов<br>
+                                    СМП по закупкам
+                                </div>
+                                <a href="/procurement-7.html" class="red-button readmore">Перейти в раздел</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--end fullwidth-->
+
+                </div>
+            </section>
+        </div>
+        <!-- end content -->
+        <!-- footer -->
+        <footer>
+            <div class="wrapper940">
+                <div class="footer-top">
+                    <a href="/" class="toplogo"><img src="images/sa-logo.png" alt=""></a>
+                    <a href="#" class="alrosalogo"><img src="images/alrosa.png" alt=""></a>
+                    <a href="#" class="top-presentation">
+                        Презентация<br>
+                        о компании
+                    </a>
+                    <div class="top-select-lang">
+                        <a href="#" class="active">RU</a>
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-contacts">
+                        <div class="footer-ttl footer-ttl-contacts">Контакты:</div>
+
+                        <div class="footer-block footer-block-addr">
+                            163000, г. Архангельск, ул. Карла Маркса,15<br>
+                            <a href="">Смотреть на карте</a>
+                        </div>
+
+                        <div class="footer-block footer-block-tel">
+                            Телефон: (8182) 65-75-07<br>
+                            Факс: (8182) 65-75-27<br>
+                            Email: <a href="mailto:">sevalmaz@severalmaz.ru</a>
+                        </div>
+                    </div>
+                    <div class="footer-subscription">
+                        <div class="footer-ttl">Всегда в курсе событий:</div>
+                        <form action="" class="subscribe-button">
+                            <div class="mail-img"></div>
+                            <div class="subscribe-button-text">Подписаться на обновления</div>
+                            <div class="arrow-img"></div>
+                            <input type="email" class="subscribe-email" value="" placeholder="Введите e-mail">
+                            <input type="submit" class="subscribe-arrow-img" value="">
+                        </form>
+                        <div class="subscribe-text">
+                            Подпишитесь на наши обновления и
+                            получайте новости о деятельности
+                            компании самыми первыми
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-ss">
+                            <a href="#" class="footer-insta"></a>
+                            <a href="#" class="footer-vk"></a>
+                        </div>
+                        <a href="#" class="footer-f5"></a>
+                    </div>
+                </div>
+                <div class="footer-old-version">© 1992–2017 ПАО «Севералмаз». <a href="">Старая версия сайта</a></div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+</body>
+</html>
