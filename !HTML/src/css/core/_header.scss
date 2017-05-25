@@ -21,6 +21,14 @@ header{
     }
   }
 }
+.old{
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  a {
+    text-decoration: none;
+  }
+}
 .sticky-logo{
   background: url(images/sticky-logo.png) no-repeat;
   width: 40px;
@@ -34,6 +42,7 @@ header{
   margin-bottom: 15px;
   padding-top: 27px;
   height: 70px;
+  position: relative;
 }
 .toplogo{
   width: 254px;

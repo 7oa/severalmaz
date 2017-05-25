@@ -150,6 +150,10 @@ a{
   p{
     margin-bottom: 30px;
   }
+  span.small-ttl{
+	font: 19px/30px "OpenSans";
+	display: block;
+  }
   a{
     text-decoration: none;
     &:hover{
@@ -178,11 +182,6 @@ a{
         margin-right: 20px;
         flex: 0 0 30px;
       }
-      /*&:after{
-        content: "";
-        display: table;
-        clear: both;
-      }*/
     }
   }
   .ol-ttl{
@@ -333,8 +332,9 @@ a{
     text-align: center;
     .gradient-ttl{
       font-size: 36px;
+	  line-height: 40px;
       font-family: "BrutalBold";
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
     .under-ttl{
       font-family: "BrutalRegular";
@@ -923,5 +923,38 @@ a{
 		padding-right: 25px;
 	  }
 	}
+  }
+}
+.table4{
+  width: 100%;
+  border: 1px solid $c-gray-border;
+  margin-bottom: 30px;
+  thead{
+	background-color: $c-bg2;
+	border-bottom: 1px solid $c-gray-border;
+	color: $c-main;
+	font: 14px/20px "BrutalRegular";
+
+	th{
+	  padding: 10px 20px;
+	  vertical-align: middle;
+	  &:first-of-type{
+		color: $c-violet;
+		text-align: left;
+	  }
+	}
+  }
+  tbody{
+	font: 18px/25px "BrutalLight";
+	  td{
+		padding: 10px 20px;
+		text-align: center;
+
+		&:first-of-type{
+		  text-align: left;
+		  font-size: 14px;
+		  font-size: 14px;
+		}
+	  }
   }
 }

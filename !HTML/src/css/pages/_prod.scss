@@ -150,8 +150,13 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+.map-img{
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
 .prod3-map{
-  height: 530px;
+  //height: 530px;
 }
 .prod3-diagram{
   margin-bottom: 55px;
@@ -159,4 +164,120 @@
 }
 .prod3-slider{
   margin-bottom: 60px;
+}
+
+.prod2-bl1{
+  @include clearfix();
+  margin-bottom: 65px;
+}
+.img-right{
+  float: right;
+}
+.prod2-bl1__img{
+  margin-left: 20px;
+  padding-top: 10px;
+}
+.flex-line{
+  display: flex;
+  justify-content: space-around;
+}
+.grad-num{
+  font: 60px/60px "BrutalBold";
+}
+.grad-p1{
+  font: 15px/21px "BrutalRegular";
+  opacity: .5;
+  margin-bottom: 10px;
+}
+.grad-p2{
+  font: 15px/21px "BrutalRegular";
+}
+.prod2-people{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px 70px;
+}
+.prod2-man{
+  margin: 0 10px 45px;
+}
+.prod2-man__img{
+  @include bg-img();
+  width: 220px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+.prod2-man__name{
+  font: 18px/25px "BrutalMedium";
+}
+.fullwidth.gradient.prod2-gradient{
+  height: auto !important;
+  margin-bottom: 52px !important;
+  .inner{
+	padding-top: 78px !important;
+	padding-bottom: 112px !important;
+  }
+  .under-ttl{
+	margin-bottom: 78px !important;
+  }
+}
+.prod2-slider{
+  margin-bottom: 35px;
+}
+.prod3-map2{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.map2-legend{
+  font: 17px/17px "OpenSansLight";
+  margin-bottom: 40px;
+}
+.map2-legend-ttl{
+  margin-bottom: 22px;
+}
+.map2-legend-line{
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+}
+.map2-legend-line-img{
+  flex: 0 0 auto;
+  width: 30px;
+  height: 35px;
+  margin-right: 7px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.map2-map{
+  flex: 0 0 auto;
+}
+.map2-img{
+  @include bg-img();
+  width: 440px;
+  height: 540px;
+}
+.map2-legend2{
+  .map2-legend-line{
+	color: $c-footer;
+	font: 15px/21px "BrutalRegular";
+	&:before{
+	  content: "";
+	  width: 10px;
+	  height: 10px;
+	  border-radius: 50%;
+	  margin-right: 30px;
+	}
+  }
+  .col1:before{
+	background: #8b30b6;
+  }
+  .col2:before{
+	background: #0034db;
+  }
+  .col3:before{
+	background: #31b430;
+  }
+}
+.prod9-img{
+  max-width: 100%;
 }
